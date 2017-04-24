@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var toValueLabel: UILabel!
     @IBOutlet weak var rmbLabel: UILabel!
     @IBOutlet weak var enLabel: UILabel!
-   
+    @IBOutlet weak var currentCurrenyLabel: UILabel!
     var rmbToEnFlag = true // 默认人民币到日元
     let rmbToJpyUrl = "http://api.k780.com:88/?app=finance.rate&scur=CNY&tcur=JPY&appkey=24935&sign=2549e4966ed7897420aa023cde6a06cb"
     let jpyToRmbUrl = "http://api.k780.com:88/?app=finance.rate&scur=JPY&tcur=CNY&appkey=24935&sign=2549e4966ed7897420aa023cde6a06cb"
@@ -40,6 +40,7 @@ class ViewController: UIViewController {
                 let swiftyJsonVar = JSON(data)
                 let rate = swiftyJsonVar["result"]["rate"].floatValue
                 self.rmbToEn = Float(rate)
+                self.currentCurrenyLabel.text = "\(self.rmbToEn)"
             }
         }
         
@@ -130,9 +131,11 @@ class ViewController: UIViewController {
         if (rmbToEnFlag) {
             rmbLabel.text = "円"
             enLabel.text = "¥"
+            currentCurrenyLabel.text = "\(enToRmb)"
         } else {
             rmbLabel.text = "¥"
             enLabel.text = "円"
+            currentCurrenyLabel.text = "\(rmbToEn)"
         }
         rmbToEnFlag = !rmbToEnFlag
         print("当前是\(rmbToEnFlag) true:人民币到日元 false:日元到人民币")

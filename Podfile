@@ -8,5 +8,6 @@ target 'exchange' do
   # Pods for exchange
  pod 'Alamofire', '~> 4.4'
  pod 'SwiftyJSON'
+ pod 'SnapKit', '~> 3.2.0'
 
 end

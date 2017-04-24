@@ -26,20 +26,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-Dn-e3V">
-                                <rect key="frame" x="0.0" y="153" width="278" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-Dn-e3V">
+                                <rect key="frame" x="-6" y="120" width="278" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Qrq-AH-ohi"/>
+                                    <constraint firstAttribute="width" constant="278" id="fWk-SV-Pt1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-81-0a3">
-                                <rect key="frame" x="82" y="111" width="293" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-81-0a3">
+                                <rect key="frame" x="82" y="89" width="293" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IwM-eM-gom"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-Mh-wea">
-                                <rect key="frame" x="16" y="100" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-Mh-wea">
+                                <rect key="frame" x="16" y="78" width="74" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="K0T-nF-bRH"/>
+                                </constraints>
                                 <state key="normal" image="exchange"/>
                                 <connections>
                                     <action selector="reverse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fpp-NP-dpq"/>
@@ -191,9 +198,12 @@
                                 <rect key="frame" x="80" y="490" width="80" height="80"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
-                                <state key="normal" title="-" backgroundImage="block_black">
+                                <state key="normal" title="0" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hs7-PG-2Iv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWn-ek-Z2N">
                                 <rect key="frame" x="160" y="490" width="80" height="80"/>
@@ -214,24 +224,47 @@
                                     <action selector="onCalBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlZ-kE-WUz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-bt-WMJ">
-                                <rect key="frame" x="-1" y="49" width="278" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-bt-WMJ">
+                                <rect key="frame" x="-1" y="28" width="278" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="jtO-XI-wN5"/>
+                                    <constraint firstAttribute="width" constant="278" id="ohv-hy-PNg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-x1-5gm">
-                                <rect key="frame" x="278" y="153" width="42" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-x1-5gm">
+                                <rect key="frame" x="274" y="120" width="42" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="5DF-hE-OkA"/>
+                                    <constraint firstAttribute="height" constant="37" id="mBN-7t-a4T"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-2L-nxC">
-                                <rect key="frame" x="282" y="49" width="35" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="¥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-2L-nxC">
+                                <rect key="frame" x="282" y="28" width="35" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="35" id="EDP-mF-NrR"/>
+                                    <constraint firstAttribute="height" constant="37" id="jV9-zf-5fd"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前汇率:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-wE-TXc">
+                                <rect key="frame" x="8" y="205" width="90" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-tR-INl">
+                                <rect key="frame" x="110" y="205" width="207" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -240,6 +273,7 @@
                         <color key="tintColor" white="0.58999999999999997" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="currentCurrenyLabel" destination="3sF-tR-INl" id="QUN-IS-aN4"/>
                         <outlet property="enLabel" destination="ax1-x1-5gm" id="clf-Qe-azb"/>
                         <outlet property="fromValueLabel" destination="gF8-bt-WMJ" id="yka-EX-Xkk"/>
                         <outlet property="rmbLabel" destination="7CQ-2L-nxC" id="daN-4h-Ejf"/>
