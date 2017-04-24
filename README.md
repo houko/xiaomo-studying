@@ -21,6 +21,7 @@ exchanger是一款汇率换算的app,目前只支持RMB和JPY(日元)之间的�
 
 ### 三.截图
 ![](http://image.xiaomo.info/swift/exchanger-icon.png)
+
 ![](http://image.xiaomo.info/swift/exchanger-ui.png)
 
 ### 四. 功能演示
