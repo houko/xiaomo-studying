@@ -138,7 +138,6 @@ class ViewController: UIViewController {
             currentCurrenyLabel.text = "\(rmbToEn)"
         }
         rmbToEnFlag = !rmbToEnFlag
-        print("当前是\(rmbToEnFlag) true:人民币到日元 false:日元到人民币")
         fromValueLabel.text = "0"
         toValueLabel.text = "0"
     }
