@@ -19,10 +19,14 @@ exchanger是一款汇率换算的app,目前只支持RMB和JPY(日元)之间的�
 4. 使用`swiftJSON`3.1.4对获取的json数据进行解析
 5. 使用`SnapKit`3.2.0做自动布局(暂未实现)
 
-### 三. 功能演示
+### 三.截图
+![](http://image.xiaomo.info/swift/exchanger-icon.png)
+![](http://image.xiaomo.info/swift/exchanger-ui.png)
+
+### 四. 功能演示
 ![](http://image.xiaomo.info/swift/exchanger.gif)
 
 
-### 四. 做此app的动机
+### 五. 做此app的动机
 1. 最近在学swift,这是个不错的练手项目
 2. 打算去日本,所以做个app装到自己手机上用,即方便又有成就感,哈哈哈
