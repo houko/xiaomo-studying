@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -23,31 +24,37 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-Dn-e3V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GV8-Dn-e3V">
                                 <rect key="frame" x="-6" y="120" width="278" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-81-0a3">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="line" translatesAutoresizingMaskIntoConstraints="NO" id="CEj-81-0a3">
                                 <rect key="frame" x="82" y="89" width="293" height="1"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="8cu-C1-2ZO"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-Mh-wea">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoL-Mh-wea">
                                 <rect key="frame" x="16" y="78" width="74" height="22"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="74" id="ofn-ec-4kw"/>
+                                </constraints>
                                 <state key="normal" image="exchange"/>
                                 <connections>
                                     <action selector="reverse:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fpp-NP-dpq"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgO-eE-7iP">
-                                <rect key="frame" x="0.0" y="255" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YgO-eE-7iP">
+                                <rect key="frame" x="0.0" y="354" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="u7T-88-ZyA"/>
+                                    <constraint firstAttribute="width" constant="94" id="ykz-bl-LY5"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="1" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,9 +63,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncp-yk-Nx8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-3E-Mil">
-                                <rect key="frame" x="80" y="255" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TPT-3E-Mil">
+                                <rect key="frame" x="94" y="354" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="RUI-S1-Ndg"/>
+                                    <constraint firstAttribute="width" constant="94" id="q0V-0x-t9R"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="2" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -67,9 +77,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2eA-b4-O7f"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93a-BR-8Gi">
-                                <rect key="frame" x="160" y="255" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93a-BR-8Gi">
+                                <rect key="frame" x="188" y="354" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="6Oj-6s-FyP"/>
+                                    <constraint firstAttribute="width" constant="94" id="uAX-hn-g06"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="3" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -78,9 +91,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YZd-gJ-oAK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBI-Ch-JeT">
-                                <rect key="frame" x="240" y="255" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBI-Ch-JeT">
+                                <rect key="frame" x="282" y="354" width="93" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Wtz-K4-W6t"/>
+                                    <constraint firstAttribute="width" constant="93" id="vV3-CT-oDO"/>
+                                </constraints>
                                 <state key="normal" image="delete" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -88,9 +104,12 @@
                                     <action selector="onDeleteBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3ms-hm-5Bu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-UD-pN0">
-                                <rect key="frame" x="0.0" y="333" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wB0-UD-pN0">
+                                <rect key="frame" x="0.0" y="432" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="7Oj-XO-vXm"/>
+                                    <constraint firstAttribute="width" constant="94" id="O0t-rg-c3u"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="4" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -99,9 +118,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDp-j9-phi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr8-LB-sqK">
-                                <rect key="frame" x="80" y="333" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lr8-LB-sqK">
+                                <rect key="frame" x="94" y="432" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="8f1-Gc-B62"/>
+                                    <constraint firstAttribute="width" constant="94" id="ul9-F9-qSs"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="5" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,9 +132,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wjx-wO-stL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQy-QR-A0y">
-                                <rect key="frame" x="160" y="333" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pQy-QR-A0y">
+                                <rect key="frame" x="188" y="432" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="Qkw-jJ-Ndf"/>
+                                    <constraint firstAttribute="height" constant="80" id="afu-Vn-WKG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="6" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -121,9 +146,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jeT-No-9yQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPS-7i-T23">
-                                <rect key="frame" x="240" y="333" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WPS-7i-T23">
+                                <rect key="frame" x="282" y="432" width="93" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="J7g-Yv-wyg"/>
+                                    <constraint firstAttribute="width" constant="93" id="dpp-jA-0aT"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="0" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -132,9 +160,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jla-R8-p7P"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQj-uP-2qO">
-                                <rect key="frame" x="0.0" y="412" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQj-uP-2qO">
+                                <rect key="frame" x="0.0" y="511" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="6Rh-LV-fZu"/>
+                                    <constraint firstAttribute="height" constant="80" id="eW2-3D-UUh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="7" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -143,9 +174,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G3y-Fo-xrZ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWE-ad-Tgh">
-                                <rect key="frame" x="80" y="412" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWE-ad-Tgh">
+                                <rect key="frame" x="94" y="511" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="5bC-1a-GUg"/>
+                                    <constraint firstAttribute="width" constant="94" id="ZbP-51-PUM"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="8" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -154,9 +188,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Ts-Hl-UYS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-b3-ZnM">
-                                <rect key="frame" x="160" y="412" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="riQ-b3-ZnM">
+                                <rect key="frame" x="188" y="511" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="1PI-jg-ndO"/>
+                                    <constraint firstAttribute="height" constant="80" id="gSv-er-Sqg"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="9" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,9 +202,12 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Amt-1J-eCp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkL-HS-1jn">
-                                <rect key="frame" x="240" y="412" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KkL-HS-1jn">
+                                <rect key="frame" x="282" y="511" width="93" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="0fl-xb-c4w"/>
+                                    <constraint firstAttribute="width" constant="93" id="KFk-yK-9yj"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="." backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -176,9 +216,12 @@
                                     <action selector="onDotBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CfU-aO-tJc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-Co-E4b">
-                                <rect key="frame" x="0.0" y="490" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-Co-E4b">
+                                <rect key="frame" x="0.0" y="589" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="4gj-2L-hGQ"/>
+                                    <constraint firstAttribute="width" constant="94" id="Ds1-Qq-BjV"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="C" backgroundImage="block_orange">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -187,9 +230,12 @@
                                     <action selector="onClearBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ju-nc-YDS"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-oG-A0k">
-                                <rect key="frame" x="80" y="490" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vbV-oG-A0k">
+                                <rect key="frame" x="94" y="589" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="94" id="cwP-Ir-S8I"/>
+                                    <constraint firstAttribute="height" constant="80" id="fCZ-TA-YxW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="0" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -198,17 +244,23 @@
                                     <action selector="onNumberCliecked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hs7-PG-2Iv"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWn-ek-Z2N">
-                                <rect key="frame" x="160" y="490" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWn-ek-Z2N">
+                                <rect key="frame" x="188" y="589" width="94" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Fsi-k4-oit"/>
+                                    <constraint firstAttribute="width" constant="94" id="caN-8w-TdH"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="+" backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-cu-0RH">
-                                <rect key="frame" x="240" y="490" width="80" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OKg-cu-0RH">
+                                <rect key="frame" x="282" y="589" width="93" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="93" id="4j8-nA-eoE"/>
+                                    <constraint firstAttribute="height" constant="80" id="CVN-8C-pVc"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
                                 <state key="normal" title="=" backgroundImage="block_orange">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -217,37 +269,35 @@
                                     <action selector="onCalBtnClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RlZ-kE-WUz"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-bt-WMJ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gF8-bt-WMJ">
                                 <rect key="frame" x="-1" y="28" width="278" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-x1-5gm">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="円" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ax1-x1-5gm">
                                 <rect key="frame" x="274" y="120" width="42" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="EFF-sX-IN7"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="¥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-2L-nxC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-2L-nxC">
                                 <rect key="frame" x="282" y="28" width="35" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="当前汇率:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-wE-TXc">
-                                <rect key="frame" x="8" y="205" width="90" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-tR-INl">
+                                <rect key="frame" x="110" y="304" width="262" height="25"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3sF-tR-INl">
-                                <rect key="frame" x="110" y="205" width="207" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前汇率:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V4w-wE-TXc">
+                                <rect key="frame" x="8" y="303" width="90" height="25"/>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -255,6 +305,65 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.38244053575357617" blue="0.12563528856849804" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="tintColor" white="0.58999999999999997" alpha="0.20000000000000001" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cQj-uP-2qO" firstAttribute="top" secondItem="wB0-UD-pN0" secondAttribute="bottom" constant="-1" id="0ht-ix-a77"/>
+                            <constraint firstItem="riQ-b3-ZnM" firstAttribute="top" secondItem="pQy-QR-A0y" secondAttribute="bottom" constant="-1" id="1RZ-x1-cV8"/>
+                            <constraint firstItem="xWE-ad-Tgh" firstAttribute="leading" secondItem="cQj-uP-2qO" secondAttribute="trailing" id="2lU-lF-jab"/>
+                            <constraint firstItem="vbV-oG-A0k" firstAttribute="top" secondItem="xWE-ad-Tgh" secondAttribute="bottom" constant="-2" id="390-K1-h9s"/>
+                            <constraint firstAttribute="trailing" secondItem="KkL-HS-1jn" secondAttribute="trailing" id="3ij-k2-1MD"/>
+                            <constraint firstItem="xWE-ad-Tgh" firstAttribute="top" secondItem="lr8-LB-sqK" secondAttribute="bottom" constant="-1" id="58u-w3-j3B"/>
+                            <constraint firstItem="YBI-Ch-JeT" firstAttribute="leading" secondItem="93a-BR-8Gi" secondAttribute="trailing" id="7eR-Ov-PXc"/>
+                            <constraint firstItem="GV8-Dn-e3V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-22" id="AB7-hz-6fe"/>
+                            <constraint firstItem="ezU-Co-E4b" firstAttribute="top" secondItem="cQj-uP-2qO" secondAttribute="bottom" constant="-2" id="BuM-Cx-5Mq"/>
+                            <constraint firstItem="lr8-LB-sqK" firstAttribute="top" secondItem="TPT-3E-Mil" secondAttribute="bottom" constant="-2" id="EMn-yt-Oj0"/>
+                            <constraint firstItem="YgO-eE-7iP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FDH-5a-Z6Y"/>
+                            <constraint firstItem="riQ-b3-ZnM" firstAttribute="leading" secondItem="xWE-ad-Tgh" secondAttribute="trailing" id="GDv-VI-yFi"/>
+                            <constraint firstAttribute="bottom" secondItem="lWn-ek-Z2N" secondAttribute="bottom" constant="-2" id="GuF-u0-mrZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7CQ-2L-nxC" secondAttribute="trailing" constant="42" id="H6O-WZ-V5G"/>
+                            <constraint firstItem="TPT-3E-Mil" firstAttribute="top" secondItem="V4w-wE-TXc" secondAttribute="bottom" constant="26" id="HIz-ha-VMN"/>
+                            <constraint firstItem="OKg-cu-0RH" firstAttribute="top" secondItem="KkL-HS-1jn" secondAttribute="bottom" constant="-2" id="HiQ-Nj-gst"/>
+                            <constraint firstItem="eoL-Mh-wea" firstAttribute="top" secondItem="gF8-bt-WMJ" secondAttribute="bottom" constant="13" id="KPn-gi-SvI"/>
+                            <constraint firstItem="3sF-tR-INl" firstAttribute="leading" secondItem="V4w-wE-TXc" secondAttribute="trailing" constant="12" id="KaF-WK-jXb"/>
+                            <constraint firstItem="eoL-Mh-wea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="M9c-iR-N7a"/>
+                            <constraint firstItem="CEj-81-0a3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="89" id="NKn-8j-KET"/>
+                            <constraint firstItem="eoL-Mh-wea" firstAttribute="centerX" secondItem="V4w-wE-TXc" secondAttribute="centerX" id="Npw-H6-7kd"/>
+                            <constraint firstItem="wB0-UD-pN0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PUg-cg-aYn"/>
+                            <constraint firstAttribute="bottom" secondItem="OKg-cu-0RH" secondAttribute="bottom" constant="-2" id="Pvf-NE-Dy8"/>
+                            <constraint firstItem="GV8-Dn-e3V" firstAttribute="top" secondItem="eoL-Mh-wea" secondAttribute="bottom" constant="20" id="QfV-T9-Yek"/>
+                            <constraint firstAttribute="trailing" secondItem="WPS-7i-T23" secondAttribute="trailing" id="S0z-up-Grk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3sF-tR-INl" secondAttribute="trailing" constant="-13" id="SWK-C1-bf1"/>
+                            <constraint firstItem="TPT-3E-Mil" firstAttribute="leading" secondItem="YgO-eE-7iP" secondAttribute="trailing" id="SzX-Lb-30Z"/>
+                            <constraint firstItem="pQy-QR-A0y" firstAttribute="leading" secondItem="lr8-LB-sqK" secondAttribute="trailing" id="U0Y-uA-RBz"/>
+                            <constraint firstItem="lWn-ek-Z2N" firstAttribute="leading" secondItem="vbV-oG-A0k" secondAttribute="trailing" id="UOS-DX-fcz"/>
+                            <constraint firstItem="KkL-HS-1jn" firstAttribute="top" secondItem="WPS-7i-T23" secondAttribute="bottom" constant="-1" id="UZ5-kT-Tes"/>
+                            <constraint firstItem="WPS-7i-T23" firstAttribute="top" secondItem="YBI-Ch-JeT" secondAttribute="bottom" constant="-2" id="VEr-BC-oSm"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ax1-x1-5gm" secondAttribute="trailing" constant="43" id="Vfa-Mj-Ohb"/>
+                            <constraint firstItem="WPS-7i-T23" firstAttribute="leading" secondItem="pQy-QR-A0y" secondAttribute="trailing" id="W7G-AL-VAK"/>
+                            <constraint firstAttribute="bottom" secondItem="ezU-Co-E4b" secondAttribute="bottom" constant="-2" id="WVM-AR-sXG"/>
+                            <constraint firstItem="93a-BR-8Gi" firstAttribute="leading" secondItem="TPT-3E-Mil" secondAttribute="trailing" id="XpT-MH-dIh"/>
+                            <constraint firstItem="YBI-Ch-JeT" firstAttribute="top" secondItem="3sF-tR-INl" secondAttribute="bottom" constant="25" id="bnh-9S-KA4"/>
+                            <constraint firstAttribute="trailing" secondItem="YBI-Ch-JeT" secondAttribute="trailing" id="bvd-vv-9Qw"/>
+                            <constraint firstItem="cQj-uP-2qO" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="cq0-By-cdJ"/>
+                            <constraint firstItem="CEj-81-0a3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="66" id="fOl-II-4B7"/>
+                            <constraint firstItem="lr8-LB-sqK" firstAttribute="leading" secondItem="wB0-UD-pN0" secondAttribute="trailing" id="fwB-4S-vAN"/>
+                            <constraint firstItem="7CQ-2L-nxC" firstAttribute="leading" secondItem="gF8-bt-WMJ" secondAttribute="trailing" constant="5" id="gME-E4-6Zj"/>
+                            <constraint firstAttribute="trailing" secondItem="OKg-cu-0RH" secondAttribute="trailing" id="jXX-pf-w1T"/>
+                            <constraint firstItem="pQy-QR-A0y" firstAttribute="top" secondItem="93a-BR-8Gi" secondAttribute="bottom" constant="-2" id="jz9-uX-k8S"/>
+                            <constraint firstItem="ezU-Co-E4b" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kfX-ve-uXx"/>
+                            <constraint firstItem="OKg-cu-0RH" firstAttribute="leading" secondItem="lWn-ek-Z2N" secondAttribute="trailing" id="luQ-ba-4CC"/>
+                            <constraint firstItem="7CQ-2L-nxC" firstAttribute="leading" secondItem="YBI-Ch-JeT" secondAttribute="leading" id="mkn-5C-Mm8"/>
+                            <constraint firstItem="ax1-x1-5gm" firstAttribute="leading" secondItem="GV8-Dn-e3V" secondAttribute="trailing" constant="2" id="nFJ-1e-kH1"/>
+                            <constraint firstItem="ax1-x1-5gm" firstAttribute="top" secondItem="CEj-81-0a3" secondAttribute="bottom" constant="30" id="ncG-ER-b97"/>
+                            <constraint firstAttribute="bottom" secondItem="vbV-oG-A0k" secondAttribute="bottom" constant="-2" id="oBG-ie-jof"/>
+                            <constraint firstItem="CEj-81-0a3" firstAttribute="centerY" secondItem="eoL-Mh-wea" secondAttribute="centerY" id="sWY-wT-0DN"/>
+                            <constraint firstAttribute="trailing" secondItem="CEj-81-0a3" secondAttribute="trailing" id="t4S-4D-vVc"/>
+                            <constraint firstItem="lWn-ek-Z2N" firstAttribute="top" secondItem="riQ-b3-ZnM" secondAttribute="bottom" constant="-2" id="w5j-gA-jCi"/>
+                            <constraint firstItem="KkL-HS-1jn" firstAttribute="leading" secondItem="riQ-b3-ZnM" secondAttribute="trailing" id="wAx-of-UED"/>
+                            <constraint firstItem="gF8-bt-WMJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-17" id="xKY-LL-c2a"/>
+                            <constraint firstItem="vbV-oG-A0k" firstAttribute="leading" secondItem="ezU-Co-E4b" secondAttribute="trailing" id="yqb-jg-0X0"/>
+                            <constraint firstItem="CEj-81-0a3" firstAttribute="top" secondItem="7CQ-2L-nxC" secondAttribute="bottom" constant="24" id="yvj-T9-8pK"/>
+                            <constraint firstItem="wB0-UD-pN0" firstAttribute="top" secondItem="YgO-eE-7iP" secondAttribute="bottom" constant="-2" id="zvb-be-qj3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="currentCurrenyLabel" destination="3sF-tR-INl" id="QUN-IS-aN4"/>
@@ -266,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="159.375" y="188.02816901408451"/>
+            <point key="canvasLocation" x="159.19999999999999" y="187.55622188905548"/>
         </scene>
     </scenes>
     <resources>
