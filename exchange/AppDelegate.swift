@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Bugly
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        NSLog("Init Bugly");
+        
+        let config = BuglyConfig()
+        
+        config.debugMode = true
+        
+        config.viewControllerTrackingEnable = true
+        
+        config.reportLogLevel = BuglyLogLevel.warn
+        Bugly.start(withAppId: "796e068b57" , config: config)
         return true
     }
 
@@ -41,6 +52,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-
+    func logInBackground(){
+        
+        while(1 > 0) {
+            BLogError("Test %@", "Error")
+            
+            BLogWarn("Test %@", "WARN")
+            
+            sleep(1)
+            
+            BLogWarn("Test %@", "INFO")
+        }
+    }
 }
 
