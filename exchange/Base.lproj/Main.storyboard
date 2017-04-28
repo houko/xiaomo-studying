@@ -251,7 +251,7 @@
                                     <constraint firstAttribute="width" constant="94" id="caN-8w-TdH"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="TRENDS" family="ShiShangZhongHeiJianTi" pointSize="28"/>
-                                <state key="normal" title="+" backgroundImage="block_black">
+                                <state key="normal" title="." backgroundImage="block_black">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
