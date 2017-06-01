@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- 基本坐标 -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>info.xiaomo</groupId>
+    <artifactId>BookNote</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <!-- 模块 -->
+    <modules>
+        <module>oop</module>
+    </modules>
+
+    <packaging>pom</packaging>
+
+    <developers>
+        <developer>
+            <name>xiaomo</name>
+            <email>xiaomo@xiaomo.info</email>
+        </developer>
+    </developers>
+
+
+    <!-- 属性 -->
+    <properties>
+        <sources.version>1.8</sources.version>
+        <!-- project encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- compiler-plugin version -->
+        <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
+        <!-- surefile-plugin test util -->
+        <surefire-plugin.version>2.19.1</surefire-plugin.version>
+    </properties>
+
+
+    <!-- 相关依赖 -->
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <build>
+        <plugins>
+
+            <!-- 编译插件-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <source>${sources.version}</source>
+                    <target>${sources.version}</target>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                </configuration>
+            </plugin>
+
+            <!--surefire-->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${surefire-plugin.version}</version>
+                <configuration>
+                    <skipTests>true</skipTests>
+                </configuration>
+            </plugin>
+
+            <!--source-->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>2.1</version>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
