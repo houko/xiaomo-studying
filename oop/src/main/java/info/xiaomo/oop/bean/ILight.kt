@@ -1,11 +1,12 @@
-package info.xiaomo.oop.bean;
+package info.xiaomo.oop.bean
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
  * いま 最高の表現 として 明日最新の始発．．～
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
- * <p>
+ *
+ *
  * author: xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
@@ -14,14 +15,14 @@ package info.xiaomo.oop.bean;
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public interface ILight {
+interface ILight {
 
-    void on();
+    fun on()
 
-    void off();
+    fun off()
 
-    void brighten();
+    fun brighten()
 
-    void dim();
+    fun dim()
 
 }

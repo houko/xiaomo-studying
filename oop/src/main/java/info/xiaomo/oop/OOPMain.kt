@@ -1,14 +1,14 @@
-package info.xiaomo.oop;
+package info.xiaomo.oop
 
-import info.xiaomo.oop.bean.ILight;
-import info.xiaomo.oop.bean.impl.Light;
+import info.xiaomo.oop.bean.impl.Light
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
  * いま 最高の表現 として 明日最新の始発．．～
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
- * <p>
+ *
+ *
  * author: xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
@@ -17,11 +17,11 @@ import info.xiaomo.oop.bean.impl.Light;
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public class OOPMain {
+object OOPMain {
 
-    public static void main(String[] args) {
-        ILight light = new Light();
-        light.on();
+    @JvmStatic fun main(args: Array<String>) {
+        val light = Light()
+        light.on()
     }
 
 }
