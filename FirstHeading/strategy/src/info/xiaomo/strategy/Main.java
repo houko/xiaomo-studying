@@ -1,3 +1,5 @@
+package info.xiaomo.strategy;
+
 import info.xiaomo.strategy.bean.DecoyDuck;
 import info.xiaomo.strategy.bean.RedHeadDcuk;
 import info.xiaomo.strategy.bean.RubberDuck;
