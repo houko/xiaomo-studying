@@ -1,6 +1,4 @@
-package info.xiaomo.behavior.fly.impl;
-
-import info.xiaomo.behavior.fly.FlyBehavior;
+package info.xiaomo.oop;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -12,13 +10,9 @@ import info.xiaomo.behavior.fly.FlyBehavior;
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
- * Date: 17/6/5 09:57
+ * Date: 17/6/5 12:19
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public class FlyWithWings implements FlyBehavior {
-    @Override
-    public void fly() {
-        System.out.println("我用翅膀飞行");
-    }
+public class Main {
 }

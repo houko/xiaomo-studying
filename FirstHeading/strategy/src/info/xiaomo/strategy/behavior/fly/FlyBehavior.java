@@ -1,4 +1,4 @@
-package info.xiaomo.behavior.fly;
+package info.xiaomo.strategy.behavior.fly;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～

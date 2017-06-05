@@ -1,4 +1,7 @@
-package info.xiaomo.behavior.quack;
+package info.xiaomo.oop.bean.impl;
+
+
+import info.xiaomo.oop.bean.ILight;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -10,11 +13,29 @@ package info.xiaomo.behavior.quack;
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
- * Date: 17/6/5 09:56
- * Description: 呱呱叫的行为接口
+ * Date: 17/6/5 12:13
+ * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public interface QuackBehavior {
+public class Light implements ILight {
 
-    void quack();
+    @Override
+    public void on() {
+
+    }
+
+    @Override
+    public void off() {
+
+    }
+
+    @Override
+    public void brighten() {
+
+    }
+
+    @Override
+    public void dim() {
+
+    }
 }

@@ -1,7 +1,7 @@
-package info.xiaomo.bean.base;
+package info.xiaomo.strategy.bean.base;
 
-import info.xiaomo.behavior.fly.FlyBehavior;
-import info.xiaomo.behavior.quack.QuackBehavior;
+import info.xiaomo.strategy.behavior.fly.FlyBehavior;
+import info.xiaomo.strategy.behavior.quack.QuackBehavior;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～

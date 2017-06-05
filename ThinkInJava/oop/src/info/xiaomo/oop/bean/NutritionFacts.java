@@ -2,7 +2,7 @@
  * Copyright (c) 2017. sh-game all Rights Resolved
  */
 
-package info.xiaomo.bean;
+package info.xiaomo.oop.bean;
 
 public class NutritionFacts {
     // not optional

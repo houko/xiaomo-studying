@@ -1,6 +1,4 @@
-package info.xiaomo.behavior.quack.impl;
-
-import info.xiaomo.behavior.quack.QuackBehavior;
+package info.xiaomo.strategy.behavior.quack;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -12,13 +10,11 @@ import info.xiaomo.behavior.quack.QuackBehavior;
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
- * Date: 17/6/5 09:59
- * Description: 吱吱叫的实现
+ * Date: 17/6/5 09:56
+ * Description: 呱呱叫的行为接口
  * Copyright(©) 2017 by xiaomo.
  */
-public class Squeak implements QuackBehavior{
-    @Override
-    public void quack() {
-        System.out.println("吱吱叫...");
-    }
+public interface QuackBehavior {
+
+    void quack();
 }

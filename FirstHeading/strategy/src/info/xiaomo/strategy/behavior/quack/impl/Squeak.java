@@ -1,6 +1,6 @@
-package info.xiaomo.behavior.fly.impl;
+package info.xiaomo.strategy.behavior.quack.impl;
 
-import info.xiaomo.behavior.fly.FlyBehavior;
+import info.xiaomo.strategy.behavior.quack.QuackBehavior;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -12,13 +12,13 @@ import info.xiaomo.behavior.fly.FlyBehavior;
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
- * Date: 17/6/5 10:18
- * Description:
+ * Date: 17/6/5 09:59
+ * Description: 吱吱叫的实现
  * Copyright(©) 2017 by xiaomo.
  */
-public class FlyRocketPower implements FlyBehavior {
+public class Squeak implements QuackBehavior {
     @Override
-    public void fly() {
-        System.out.println("我在用火箭飞行");
+    public void quack() {
+        System.out.println("吱吱叫...");
     }
 }

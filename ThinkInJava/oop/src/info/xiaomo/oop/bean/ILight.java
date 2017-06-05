@@ -1,6 +1,4 @@
-package info.xiaomo.behavior.fly.impl;
-
-import info.xiaomo.behavior.fly.FlyBehavior;
+package info.xiaomo.oop.bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -12,13 +10,17 @@ import info.xiaomo.behavior.fly.FlyBehavior;
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
- * Date: 17/6/5 09:58
+ * Date: 17/6/5 12:14
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public class FlyNotWay implements FlyBehavior {
-    @Override
-    public void fly() {
-        System.out.println("我不会飞...");
-    }
+public interface ILight {
+
+    void on();
+
+    void off();
+
+    void brighten();
+
+    void dim();
 }

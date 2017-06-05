@@ -1,6 +1,6 @@
-package info.xiaomo.behavior.quack.impl;
+package info.xiaomo.strategy.behavior.quack.impl;
 
-import info.xiaomo.behavior.quack.QuackBehavior;
+import info.xiaomo.strategy.behavior.quack.QuackBehavior;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -16,7 +16,7 @@ import info.xiaomo.behavior.quack.QuackBehavior;
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public class Quack implements QuackBehavior{
+public class Quack implements QuackBehavior {
     @Override
     public void quack() {
         System.out.println("呱呱叫...");

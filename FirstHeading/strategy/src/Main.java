@@ -1,7 +1,7 @@
-import info.xiaomo.bean.DecoyDuck;
-import info.xiaomo.bean.RedHeadDcuk;
-import info.xiaomo.bean.RubberDuck;
-import info.xiaomo.bean.base.Duck;
+import info.xiaomo.strategy.bean.DecoyDuck;
+import info.xiaomo.strategy.bean.RedHeadDcuk;
+import info.xiaomo.strategy.bean.RubberDuck;
+import info.xiaomo.strategy.bean.base.Duck;
 
 public class Main {
 

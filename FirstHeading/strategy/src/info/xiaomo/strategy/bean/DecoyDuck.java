@@ -1,8 +1,8 @@
-package info.xiaomo.bean;
+package info.xiaomo.strategy.bean;
 
-import info.xiaomo.bean.base.Duck;
-import info.xiaomo.behavior.fly.impl.FlyNotWay;
-import info.xiaomo.behavior.quack.impl.MuteQuack;
+import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.behavior.fly.impl.FlyNotWay;
+import info.xiaomo.strategy.behavior.quack.impl.MuteQuack;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
