@@ -26,7 +26,6 @@ public class Main {
         light.off();
         light.dim();
 
-
     }
 
 }
