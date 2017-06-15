@@ -1,5 +1,6 @@
 package info.xiaomo.observer;
 
+import info.xiaomo.observer.bean.Data;
 import info.xiaomo.observer.bean.WeatherData;
 import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
 
@@ -22,7 +23,7 @@ public class ObserverMain {
 
         WeatherData weatherData = new WeatherData();
         CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData);
-        weatherData.setMeasurements(20.0f, 1.5f, 400.1f);
+        weatherData.setMeasurements(new Data(20.0f, 1.5f, 400.1f));
         display.display();
     }
 

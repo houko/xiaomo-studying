@@ -1,5 +1,6 @@
 package info.xiaomo.observer.display.impl;
 
+import info.xiaomo.observer.bean.Data;
 import info.xiaomo.observer.bean.WeatherData;
 import info.xiaomo.observer.display.DisPlayElement;
 
@@ -21,9 +22,7 @@ import java.util.Observer;
  * Copyright(©) 2017 by xiaomo.
  */
 public class CurrentConditionsDisplay implements Observer, DisPlayElement {
-    private float temperature;
-    private float humidity;
-    private float pressure;
+    private Data data;
 
     public CurrentConditionsDisplay(Observable observable) {
         observable.addObserver(this);
@@ -33,11 +32,11 @@ public class CurrentConditionsDisplay implements Observer, DisPlayElement {
     public void display() {
         StringBuilder sb = new StringBuilder();
         sb.append("现在的温度")
-                .append(temperature)
+                .append(data.getTemperature())
                 .append("\n现在的湿度")
-                .append(humidity)
+                .append(data.getHumidity())
                 .append("\n现在的气压")
-                .append(pressure);
+                .append(data.getPressure());
         System.out.println(sb.toString());
     }
 
@@ -45,9 +44,7 @@ public class CurrentConditionsDisplay implements Observer, DisPlayElement {
     public void update(Observable o, Object arg) {
         if (o instanceof WeatherData) {
             WeatherData weatherData = (WeatherData) o;
-            this.temperature = weatherData.getTemperature();
-            this.humidity = weatherData.getHumidity();
-            this.pressure = weatherData.getPressure();
+            this.data = weatherData.getData();
         }
     }
 }

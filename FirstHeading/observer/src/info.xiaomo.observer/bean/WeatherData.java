@@ -2,7 +2,6 @@ package info.xiaomo.observer.bean;
 
 
 import java.util.Observable;
-import java.util.Observer;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -19,35 +18,24 @@ import java.util.Observer;
  * Copyright(©) 2017 by xiaomo.
  */
 public class WeatherData extends Observable {
-    private float temperature;
-    private float humidity;
-    private float pressure;
+    private Data data;
 
     public WeatherData() {
     }
 
-    public void measurementsChanged() {
-        setChanged();
-    }
+    public void setMeasurements(Data data) {
+        if (!data.equals(this)) {
+            this.data = data;
+            setChanged();
+        }
 
-    public void setMeasurements(float temperature, float humidity, float pressure) {
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.pressure = pressure;
-        measurementsChanged();
         notifyObservers();
     }
 
 
-    public float getTemperature() {
-        return temperature;
+    public Data getData() {
+        return data;
     }
 
-    public float getHumidity() {
-        return humidity;
-    }
 
-    public float getPressure() {
-        return pressure;
-    }
 }
