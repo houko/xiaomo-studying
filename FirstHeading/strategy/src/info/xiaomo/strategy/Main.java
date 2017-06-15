@@ -1,7 +1,7 @@
 package info.xiaomo.strategy;
 
 import info.xiaomo.strategy.bean.DecoyDuck;
-import info.xiaomo.strategy.bean.RedHeadDcuk;
+import info.xiaomo.strategy.bean.RedHeadDuck;
 import info.xiaomo.strategy.bean.RubberDuck;
 import info.xiaomo.strategy.bean.base.Duck;
 
@@ -14,7 +14,7 @@ public class Main {
         decoyDuck.performQuack();
         System.out.println("\n");
 
-        Duck redHeadDuck = new RedHeadDcuk();
+        Duck redHeadDuck = new RedHeadDuck();
         redHeadDuck.display();
         redHeadDuck.performQuack();
         redHeadDuck.performFly();

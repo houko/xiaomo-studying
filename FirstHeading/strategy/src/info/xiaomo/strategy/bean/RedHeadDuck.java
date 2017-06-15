@@ -18,8 +18,8 @@ import info.xiaomo.strategy.behavior.quack.impl.Quack;
  * Description:
  * Copyright(©) 2017 by xiaomo.
  */
-public class RedHeadDcuk extends Duck {
-    public RedHeadDcuk() {
+public class RedHeadDuck extends Duck {
+    public RedHeadDuck() {
         flyBehavior = new FlyWithWings();
         quackBehavior = new Quack();
     }
