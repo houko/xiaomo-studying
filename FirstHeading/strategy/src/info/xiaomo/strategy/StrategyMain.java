@@ -5,7 +5,7 @@ import info.xiaomo.strategy.bean.RedHeadDuck;
 import info.xiaomo.strategy.bean.RubberDuck;
 import info.xiaomo.strategy.bean.base.Duck;
 
-public class Main {
+public class StrategyMain {
 
     public static void main(String[] args) {
         Duck decoyDuck = new DecoyDuck();
