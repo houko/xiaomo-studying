@@ -5,7 +5,6 @@ import info.xiaomo.observer.bean.WeatherData;
 import info.xiaomo.observer.display.DisPlayElement;
 
 import java.util.Observable;
-import java.util.Observer;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -21,7 +20,7 @@ import java.util.Observer;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class CurrentConditionsDisplay implements Observer, DisPlayElement {
+public class CurrentConditionsDisplay implements DisPlayElement {
     private Data data;
 
     public CurrentConditionsDisplay(Observable observable) {

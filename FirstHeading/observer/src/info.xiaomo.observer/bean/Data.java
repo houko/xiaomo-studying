@@ -48,4 +48,22 @@ public class Data {
         this.humidity = humidity;
         this.pressure = pressure;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        Data data = (Data) o;
+
+        return Float.compare(data.temperature, temperature) == 0 && Float.compare(data.humidity, humidity) == 0 && Float.compare(data.pressure, pressure) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = (temperature != +0.0f ? Float.floatToIntBits(temperature) : 0);
+        result = 31 * result + (humidity != +0.0f ? Float.floatToIntBits(humidity) : 0);
+        result = 31 * result + (pressure != +0.0f ? Float.floatToIntBits(pressure) : 0);
+        return result;
+    }
 }

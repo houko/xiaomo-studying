@@ -21,9 +21,9 @@ import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
 public class ObserverMain {
     public static void main(String[] args) {
 
-        WeatherData weatherData = new WeatherData();
-        CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData);
-        weatherData.setMeasurements(new Data(20.0f, 1.5f, 400.1f));
+        WeatherData weatherData = new WeatherData(); //创建被观察者对象
+        CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData); //创建观察者对象，并将被观察者对象登记
+        weatherData.setMeasurements(new Data(20.0f, 1.5f, 400.1f)); ////给被观察者状态赋值
         display.display();
     }
 

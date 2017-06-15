@@ -1,5 +1,7 @@
 package info.xiaomo.observer.display;
 
+import java.util.Observer;
+
 /**
  * 把今天最好的表现当作明天最新的起点．．～
  * いま 最高の表現 として 明日最新の始発．．～
@@ -14,7 +16,7 @@ package info.xiaomo.observer.display;
  * desc  : 展示接口
  * Copyright(©) 2017 by xiaomo.
  */
-public interface DisPlayElement {
+public interface DisPlayElement extends Observer {
 
     void display();
 
