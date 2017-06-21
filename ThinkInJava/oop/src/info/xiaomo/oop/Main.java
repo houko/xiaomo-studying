@@ -11,7 +11,7 @@ package info.xiaomo.oop;
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
  * Date: 17/6/5 12:19
- * Description:
+ * Description: main
  * Copyright(©) 2017 by xiaomo.
  */
 public class Main {
