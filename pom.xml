@@ -9,6 +9,7 @@
 
     <!-- 模块 -->
     <modules>
+        <module>NettyInAction</module>
     </modules>
 
     <packaging>pom</packaging>
