@@ -21,11 +21,13 @@ import info.xiaomo.extend.bean.Square;
 public class Extend {
 
     public static void main(String[] args) {
-        Shape circle = new Circle();
+        Circle circle = new Circle();
         circle.draw();
+        circle.roll();
 
-        Shape square = new Square();
+        Square square = new Square();
         square.draw();
+        square.push();
     }
 
 }
