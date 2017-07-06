@@ -19,23 +19,47 @@ import info.xiaomo.oop.bean.ILight;
  */
 public class Light implements ILight {
 
+    private boolean isOpen = false;
+    private int lighter = 5;
+
+
     @Override
     public void on() {
-
+        if (isOpen) {
+            System.out.println("灯本来就是开着的");
+            return;
+        }
+        isOpen = true;
+        System.out.println("灯开了");
     }
 
     @Override
     public void off() {
-
+        if (!isOpen) {
+            System.out.println("灯本来就是关着的");
+            return;
+        }
+        isOpen = false;
+        System.out.println("关灯");
     }
 
     @Override
     public void brighten() {
-
+        if (!isOpen) {
+            System.out.println("灯没开不能调亮度");
+            return;
+        }
+        lighter++;
+        System.out.println("变亮" + lighter);
     }
 
     @Override
     public void dim() {
-
+        if (!isOpen) {
+            System.out.println("灯没开不能调亮度");
+            return;
+        }
+        lighter--;
+        System.out.println("变暗" + lighter);
     }
 }

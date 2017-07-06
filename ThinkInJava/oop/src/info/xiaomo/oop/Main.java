@@ -1,5 +1,8 @@
 package info.xiaomo.oop;
 
+import info.xiaomo.oop.bean.ILight;
+import info.xiaomo.oop.bean.impl.Light;
+
 /**
  * 把今天最好的表现当作明天最新的起点．．～
  * いま 最高の表現 として 明日最新の始発．．～
@@ -15,4 +18,14 @@ package info.xiaomo.oop;
  * Copyright(©) 2017 by xiaomo.
  */
 public class Main {
+    public static void main(String[] args) {
+        ILight light = new Light();
+        light.on();
+        light.brighten();
+        light.dim();
+        light.off();
+        light.dim();
+
+    }
+
 }
