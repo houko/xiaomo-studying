@@ -23,15 +23,17 @@ public class Register {
 
     private static WeatherData weatherData;
 
-    public void init(WeatherData weatherData){
-        this.weatherData = weatherData;
+    public static void init(WeatherData weatherData) {
+        Register.weatherData = weatherData;
+        register(new CurrentConditionsDisplay());
     }
 
-    public static void register(Observer observer) {
+
+    private static void register(Observer observer) {
         weatherData.addObserver(observer);
     }
 
-    public static void remove(Observer observer) {
-       weatherData.deleteObserver(observer);
+    private static void remove(Observer observer) {
+        weatherData.deleteObserver(observer);
     }
 }

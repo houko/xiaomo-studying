@@ -22,7 +22,7 @@ public class ObserverMain {
         // 获得一个气象站数据实例
         WeatherData weatherData = new WeatherData();
         // 注册观察者
-        Register.register(weatherData);
+        Register.init(weatherData);
         // 数据发生变化
         weatherData.setMeasurements(10,20,30);
 
