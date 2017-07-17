@@ -8,6 +8,9 @@ import info.xiaomo.command.command.impl.LightOnCommand;
 import info.xiaomo.command.command.impl.TVOffCommand;
 import info.xiaomo.command.command.impl.TVOnCommand;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import static info.xiaomo.command.RemoteControl.RemoteType;
 
 /**
@@ -37,8 +40,13 @@ public class CommandMain {
         remoteControl.buttonWasPressed(RemoteType.TV_ON);
         remoteControl.buttonWasPressed(RemoteType.LIGHT_OFF);
 
+
         Command lastCommand = remoteControl.getLastCommand();
         lastCommand.undo();
+
+        // 执行宏命令（将多个命令绑定在一个按钮上）
+        System.out.println("---------执行宏命令（将多个命令绑定在一个按钮上）----------------");
+        executeMacroCommand();
 
     }
 
@@ -49,10 +57,21 @@ public class CommandMain {
         LightOffCommand lightOffCommand = new LightOffCommand(light);
         TVOnCommand tvOnCommand = new TVOnCommand(tv);
         TVOffCommand tvOffCommand = new TVOffCommand(tv);
-        remoteControl.registerCommand(RemoteType.LIGHT_ON,lightOnCommand);
-        remoteControl.registerCommand(RemoteType.LIGHT_OFF,lightOffCommand);
-        remoteControl.registerCommand(RemoteType.TV_ON,tvOnCommand);
-        remoteControl.registerCommand(RemoteType.TV_OFF,tvOffCommand);
+        remoteControl.registerCommand(RemoteType.LIGHT_ON, lightOnCommand);
+        remoteControl.registerCommand(RemoteType.LIGHT_OFF, lightOffCommand);
+        remoteControl.registerCommand(RemoteType.TV_ON, tvOnCommand);
+        remoteControl.registerCommand(RemoteType.TV_OFF, tvOffCommand);
         return remoteControl;
+    }
+
+    public static void executeMacroCommand() {
+        Light light = new Light();
+        TV tv = new TV();
+        List<Command> commands = new ArrayList<>();
+        commands.add(new TVOnCommand(tv));
+        commands.add(new LightOnCommand(light));
+        for (Command command : commands) {
+            command.execute();
+        }
     }
 }
