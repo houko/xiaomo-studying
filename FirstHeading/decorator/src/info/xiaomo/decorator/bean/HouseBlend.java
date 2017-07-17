@@ -14,10 +14,11 @@ package info.xiaomo.decorator.bean;
  * desc  : 豆浆
  * Copyright(©) 2017 by xiaomo.
  */
-public class HouseBlend extends Beverage {
+public class HouseBlend implements Beverage {
 
-    public HouseBlend() {
-        description = "豆浆";
+    @Override
+    public String getDescription() {
+        return "豆浆";
     }
 
     @Override

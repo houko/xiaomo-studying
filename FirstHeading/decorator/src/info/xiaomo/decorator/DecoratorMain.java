@@ -1,6 +1,7 @@
 package info.xiaomo.decorator;
 
 import info.xiaomo.decorator.bean.Beverage;
+import info.xiaomo.decorator.bean.DarkRoast;
 import info.xiaomo.decorator.bean.HouseBlend;
 import info.xiaomo.decorator.decortor.Milk;
 import info.xiaomo.decorator.decortor.Mocha;
@@ -20,8 +21,9 @@ import info.xiaomo.decorator.decortor.Mocha;
  * Copyright(©) 2017 by xiaomo.
  */
 public class DecoratorMain {
+     static Beverage beverage;
     public static void main(String[] args) {
-        Beverage beverage = new HouseBlend();
+        beverage = new HouseBlend();
 
         beverage = new Mocha(beverage);
         beverage = new Milk(beverage);
@@ -29,4 +31,5 @@ public class DecoratorMain {
         double cost = beverage.cost();
         System.out.println(cost);
     }
+
 }

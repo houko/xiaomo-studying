@@ -16,11 +16,5 @@ import info.xiaomo.decorator.bean.Beverage;
  * desc  : 配料装饰器
  * Copyright(©) 2017 by xiaomo.
  */
-public abstract class CondimentDecorator extends Beverage {
-    public abstract String getDescription();
-
-    @Override
-    public double cost() {
-        return 0;
-    }
+public abstract class CondimentDecorator implements Beverage {
 }

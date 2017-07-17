@@ -14,13 +14,15 @@ package info.xiaomo.decorator.bean;
  * desc  : 深焙咖啡
  * Copyright(©) 2017 by xiaomo.
  */
-public class DarkRoast extends Beverage {
-    public DarkRoast() {
-        description = "深焙咖啡";
-    }
+public class DarkRoast implements Beverage {
 
     @Override
     public double cost() {
         return 5;
+    }
+
+    @Override
+    public String getDescription() {
+        return "深焙咖啡";
     }
 }

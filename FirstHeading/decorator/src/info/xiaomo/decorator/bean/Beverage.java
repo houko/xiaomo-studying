@@ -14,13 +14,9 @@ package info.xiaomo.decorator.bean;
  * desc  : 饮料基类
  * Copyright(©) 2017 by xiaomo.
  */
-public abstract class Beverage {
-    protected String description = "unknown Beverage";
+public interface Beverage {
+    double cost();
 
-    public abstract double cost();
-
-    public String getDescription() {
-        return description;
-    }
+    String getDescription();
 
 }
