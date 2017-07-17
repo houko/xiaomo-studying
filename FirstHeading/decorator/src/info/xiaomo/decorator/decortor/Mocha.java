@@ -1,7 +1,7 @@
-package info.xiaomo.decorator.compent;
+package info.xiaomo.decorator.decortor;
 
 import info.xiaomo.decorator.bean.Beverage;
-import info.xiaomo.decorator.bean.CondimentDecorator;
+import info.xiaomo.decorator.decortor.CondimentDecorator;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -14,23 +14,23 @@ import info.xiaomo.decorator.bean.CondimentDecorator;
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
  * Date  : 2017/7/17 17:21
- * desc  : 牛奶
+ * desc  : 摩卡
  * Copyright(©) 2017 by xiaomo.
  */
-public class Milk extends CondimentDecorator{
+public class Mocha extends CondimentDecorator {
     private Beverage beverage;
 
-    public Milk(Beverage beverage) {
+    public Mocha(Beverage beverage) {
         this.beverage = beverage;
     }
 
     @Override
     public String getDescription() {
-        return beverage.getDescription() + "，牛奶";
+        return beverage.getDescription() + "，摩卡";
     }
 
     @Override
     public double cost() {
-        return 2 + beverage.cost();
+        return 1 + beverage.cost();
     }
 }

@@ -2,8 +2,8 @@ package info.xiaomo.decorator;
 
 import info.xiaomo.decorator.bean.Beverage;
 import info.xiaomo.decorator.bean.HouseBlend;
-import info.xiaomo.decorator.compent.Milk;
-import info.xiaomo.decorator.compent.Mocha;
+import info.xiaomo.decorator.decortor.Milk;
+import info.xiaomo.decorator.decortor.Mocha;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
