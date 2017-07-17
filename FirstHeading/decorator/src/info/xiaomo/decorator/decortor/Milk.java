@@ -1,7 +1,6 @@
 package info.xiaomo.decorator.decortor;
 
 import info.xiaomo.decorator.bean.Beverage;
-import info.xiaomo.decorator.decortor.CondimentDecorator;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -17,7 +16,7 @@ import info.xiaomo.decorator.decortor.CondimentDecorator;
  * desc  : 牛奶
  * Copyright(©) 2017 by xiaomo.
  */
-public class Milk extends CondimentDecorator{
+public class Milk extends CondimentDecorator {
     private Beverage beverage;
 
     public Milk(Beverage beverage) {

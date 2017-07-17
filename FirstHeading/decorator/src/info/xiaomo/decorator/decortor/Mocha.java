@@ -1,7 +1,6 @@
 package info.xiaomo.decorator.decortor;
 
 import info.xiaomo.decorator.bean.Beverage;
-import info.xiaomo.decorator.decortor.CondimentDecorator;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
