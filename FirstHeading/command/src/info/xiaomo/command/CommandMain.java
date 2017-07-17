@@ -2,6 +2,7 @@ package info.xiaomo.command;
 
 import info.xiaomo.command.bean.Light;
 import info.xiaomo.command.bean.TV;
+import info.xiaomo.command.command.Command;
 import info.xiaomo.command.command.impl.LightOffCommand;
 import info.xiaomo.command.command.impl.LightOnCommand;
 import info.xiaomo.command.command.impl.TVOffCommand;
@@ -35,6 +36,9 @@ public class CommandMain {
         remoteControl.buttonWasPressed(RemoteType.TV_OFF);
         remoteControl.buttonWasPressed(RemoteType.TV_ON);
         remoteControl.buttonWasPressed(RemoteType.LIGHT_OFF);
+
+        Command lastCommand = remoteControl.getLastCommand();
+        lastCommand.undo();
 
     }
 

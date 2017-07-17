@@ -28,4 +28,10 @@ public class LightOnCommand implements Command {
     public void execute() {
         light.on();
     }
+
+    @Override
+    public void undo() {
+        System.out.println("执行开灯的撤销操作");
+        light.off();
+    }
 }

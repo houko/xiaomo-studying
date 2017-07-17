@@ -28,4 +28,10 @@ public class TVOnCommand implements Command {
     public void execute() {
         tv.on();
     }
+
+    @Override
+    public void undo() {
+        System.out.println("执行开电视的撤销操作");
+        tv.off();
+    }
 }

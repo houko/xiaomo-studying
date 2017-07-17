@@ -22,6 +22,8 @@ import java.util.Map;
 public class RemoteControl {
     private Map<RemoteType,Command> commandMap = new HashMap<>();
 
+    private Command lastCommand;
+
     public void registerCommand(RemoteType remoteType,Command command) {
         commandMap.put(remoteType,command);
     }
@@ -29,8 +31,12 @@ public class RemoteControl {
     public void buttonWasPressed(RemoteType type) {
         Command command = commandMap.get(type);
         command.execute();
+        lastCommand = command;
     }
 
+    public Command getLastCommand() {
+        return lastCommand;
+    }
 
     enum RemoteType {
         LIGHT_ON(1),
