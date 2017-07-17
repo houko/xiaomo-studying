@@ -1,11 +1,10 @@
 package info.xiaomo.observer.bean;
 
 
-import info.xiaomo.observer.subject.Observer;
-import info.xiaomo.observer.subject.Subject;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Observable;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -21,33 +20,14 @@ import java.util.List;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class WeatherData implements Subject {
-    private List<Observer> observers;
+public class WeatherData extends Observable {
     private float temperature;
     private float humidity;
     private float pressure;
 
-    public WeatherData() {
-        observers = new ArrayList<>();
-    }
-
-    @Override
-    public void registerObserver(Observer o) {
-        observers.add(o);
-    }
-
-    @Override
-    public void removeObserver(Observer o) {
-        observers.remove(o);
-    }
-
-    public void notifyObservers() {
-        for (Observer observer : observers) {
-            observer.update(temperature, humidity, pressure);
-        }
-    }
 
     public void measurementChanged() {
+        setChanged();
         notifyObservers();
     }
 

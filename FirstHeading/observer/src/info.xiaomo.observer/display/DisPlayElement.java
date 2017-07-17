@@ -1,7 +1,7 @@
 package info.xiaomo.observer.display;
 
 
-import info.xiaomo.observer.subject.Observer;
+import java.util.Observer;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
