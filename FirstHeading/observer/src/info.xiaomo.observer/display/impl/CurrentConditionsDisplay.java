@@ -1,10 +1,7 @@
 package info.xiaomo.observer.display.impl;
 
-import info.xiaomo.observer.bean.Data;
 import info.xiaomo.observer.bean.WeatherData;
 import info.xiaomo.observer.display.DisPlayElement;
-
-import java.util.Observable;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -21,29 +18,33 @@ import java.util.Observable;
  * Copyright(©) 2017 by xiaomo.
  */
 public class CurrentConditionsDisplay implements DisPlayElement {
-    private Data data;
+    private float temperature;
+    private float humidity;
+    private float pressure;
 
-    public CurrentConditionsDisplay(Observable observable) {
-        observable.addObserver(this);
+    public CurrentConditionsDisplay(WeatherData weatherData) {
+        this.temperature = weatherData.getTemperature();
+        this.humidity = weatherData.getHumidity();
+        this.pressure = weatherData.getPressure();
     }
 
     @Override
     public void display() {
         StringBuilder sb = new StringBuilder();
         sb.append("现在的温度")
-                .append(data.getTemperature())
+                .append(temperature)
                 .append("\n现在的湿度")
-                .append(data.getHumidity())
+                .append(humidity)
                 .append("\n现在的气压")
-                .append(data.getPressure());
+                .append(pressure);
         System.out.println(sb.toString());
     }
 
     @Override
-    public void update(Observable o, Object arg) {
-        if (o instanceof WeatherData) {
-            WeatherData weatherData = (WeatherData) o;
-            this.data = weatherData.getData();
-        }
+    public void update(float temp, float humidity, float pressure) {
+        this.temperature = temp;
+        this.humidity = humidity;
+        this.pressure = pressure;
+        display();
     }
 }

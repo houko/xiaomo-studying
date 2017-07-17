@@ -1,7 +1,5 @@
-package info.xiaomo.observer.display;
+package info.xiaomo.observer.subject;
 
-
-import info.xiaomo.observer.subject.Observer;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -11,14 +9,15 @@ import info.xiaomo.observer.subject.Observer;
  * <p>
  * author: xiaomo
  * github: https://github.com/xiaomoinfo
- * email : xiaomo@xiamoo.info
+ * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 17/6/15 10:44
- * desc  : 展示接口
+ * Date  : 2017/7/17 14:01
+ * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public interface DisPlayElement extends Observer {
-
-    void display();
+public interface Subject {
+    void registerObserver(Observer o);
+    void removeObserver(Observer o);
+    void notifyObservers();
 
 }

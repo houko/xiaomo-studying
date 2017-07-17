@@ -1,6 +1,5 @@
 package info.xiaomo.observer;
 
-import info.xiaomo.observer.bean.Data;
 import info.xiaomo.observer.bean.WeatherData;
 import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
 
@@ -20,11 +19,15 @@ import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
  */
 public class ObserverMain {
     public static void main(String[] args) {
+        WeatherData data = new WeatherData();
 
-        WeatherData weatherData = new WeatherData(); //创建被观察者对象
-        CurrentConditionsDisplay display = new CurrentConditionsDisplay(weatherData); //创建观察者对象，并将被观察者对象登记
-        weatherData.setMeasurements(new Data(20.0f, 1.5f, 400.1f)); ////给被观察者状态赋值
-        display.display();
+        // 注册观察者
+        CurrentConditionsDisplay observer = new CurrentConditionsDisplay(data);
+        data.registerObserver(observer);
+
+        // 通知数据发生的变化
+        data.setMeasurements(10,20,30);
+
     }
 
 }
