@@ -45,6 +45,7 @@ public class CommandMain {
         lastCommand.undo();
 
         // 执行宏命令（将多个命令绑定在一个按钮上）
+        // 队列请求，线程执行，日志请求
         System.out.println("---------执行宏命令（将多个命令绑定在一个按钮上）----------------");
         executeMacroCommand();
 
