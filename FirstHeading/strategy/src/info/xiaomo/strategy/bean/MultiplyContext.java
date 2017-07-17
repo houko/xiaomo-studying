@@ -1,7 +1,6 @@
 package info.xiaomo.strategy.bean;
 
 import info.xiaomo.strategy.bean.base.Context;
-import info.xiaomo.strategy.behavior.operate.impl.AddOperate;
 import info.xiaomo.strategy.behavior.operate.impl.MultiplyOperate;
 
 /**
@@ -22,7 +21,5 @@ public class MultiplyContext extends Context {
     public MultiplyContext() {
         super(new MultiplyOperate());
     }
-    public void count( int a, int b){
-        System.out.println( operate.doOperate(a,b));
-    }
+
 }

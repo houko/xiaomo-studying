@@ -22,6 +22,8 @@ public class Context {
     public Context(Operate operate) {
         this.operate = operate;
     }
-
+    public void count( int a, int b){
+        System.out.println( operate.doOperate(a,b));
+    }
 
 }

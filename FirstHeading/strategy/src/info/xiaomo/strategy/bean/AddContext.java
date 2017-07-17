@@ -21,7 +21,4 @@ public class AddContext extends Context {
     public AddContext() {
         super(new AddOperate());
     }
-    public void count( int a, int b){
-        System.out.println( operate.doOperate(a,b));
-    }
 }
