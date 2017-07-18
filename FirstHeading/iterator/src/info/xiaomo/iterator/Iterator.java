@@ -1,4 +1,4 @@
-package info.xiaomo.inerator;
+package info.xiaomo.iterator;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -10,12 +10,12 @@ package info.xiaomo.inerator;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/7/18 13:31
- * desc  : 迭代器模式
+ * Date  : 2017/7/18 13:35
+ * desc  : 迭代器接口
  * Copyright(©) 2017 by xiaomo.
  */
-public class IteratorMain {
-    public static void main(String[] args) {
+public interface Iterator {
+    boolean hasNext();
 
-    }
+    Object next();
 }
