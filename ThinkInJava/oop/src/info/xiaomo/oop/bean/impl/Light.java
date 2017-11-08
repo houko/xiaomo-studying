@@ -9,7 +9,7 @@ import info.xiaomo.oop.bean.ILight;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856

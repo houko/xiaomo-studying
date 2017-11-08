@@ -1,9 +1,6 @@
 package info.xiaomo.observer.bean;
 
 
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.Observable;
 
 /**
@@ -12,7 +9,7 @@ import java.util.Observable;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiamoo.info
  * QQ    : 83387856

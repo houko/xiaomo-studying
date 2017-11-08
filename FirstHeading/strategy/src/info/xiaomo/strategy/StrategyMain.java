@@ -4,27 +4,27 @@ import info.xiaomo.strategy.bean.DecoyDuck;
 import info.xiaomo.strategy.bean.MultiplyContext;
 import info.xiaomo.strategy.bean.RedHeadDuck;
 import info.xiaomo.strategy.bean.RubberDuck;
-import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.bean.base.AbstractDuck;
 
 public class StrategyMain {
 
     public static void main(String[] args) {
-        Duck decoyDuck = new DecoyDuck();
-        decoyDuck.display();
-        decoyDuck.performFly();
-        decoyDuck.performQuack();
+        AbstractDuck decoyAbstractDuck = new DecoyDuck();
+        decoyAbstractDuck.display();
+        decoyAbstractDuck.performFly();
+        decoyAbstractDuck.performQuack();
         System.out.println("\n");
 
-        Duck redHeadDuck = new RedHeadDuck();
-        redHeadDuck.display();
-        redHeadDuck.performQuack();
-        redHeadDuck.performFly();
+        AbstractDuck redHeadAbstractDuck = new RedHeadDuck();
+        redHeadAbstractDuck.display();
+        redHeadAbstractDuck.performQuack();
+        redHeadAbstractDuck.performFly();
         System.out.println("\n");
 
-        Duck rubberDuck = new RubberDuck();
-        rubberDuck.display();
-        rubberDuck.performFly();
-        rubberDuck.performQuack();
+        AbstractDuck rubberAbstractDuck = new RubberDuck();
+        rubberAbstractDuck.display();
+        rubberAbstractDuck.performFly();
+        rubberAbstractDuck.performQuack();
 
         //计算策略
         MultiplyContext addContext = new MultiplyContext();

@@ -1,6 +1,6 @@
 package info.xiaomo.strategy.bean;
 
-import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.bean.base.AbstractDuck;
 import info.xiaomo.strategy.behavior.fly.impl.FlyNotWay;
 import info.xiaomo.strategy.behavior.quack.impl.MuteQuack;
 
@@ -10,7 +10,7 @@ import info.xiaomo.strategy.behavior.quack.impl.MuteQuack;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
@@ -18,7 +18,7 @@ import info.xiaomo.strategy.behavior.quack.impl.MuteQuack;
  * Description: 诱惑鸭不会飞也不会叫
  * Copyright(©) 2017 by xiaomo.
  */
-public class DecoyDuck extends Duck {
+public class DecoyDuck extends AbstractDuck {
 
     public DecoyDuck() {
        flyBehavior = new FlyNotWay();

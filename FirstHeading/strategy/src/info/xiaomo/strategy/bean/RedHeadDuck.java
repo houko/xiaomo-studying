@@ -1,6 +1,6 @@
 package info.xiaomo.strategy.bean;
 
-import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.bean.base.AbstractDuck;
 import info.xiaomo.strategy.behavior.fly.impl.FlyWithWings;
 import info.xiaomo.strategy.behavior.quack.impl.Quack;
 
@@ -10,15 +10,16 @@ import info.xiaomo.strategy.behavior.quack.impl.Quack;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
  * Date: 17/6/5 10:13
  * Description:
  * Copyright(©) 2017 by xiaomo.
+ * @author qq
  */
-public class RedHeadDuck extends Duck {
+public class RedHeadDuck extends AbstractDuck {
     public RedHeadDuck() {
         flyBehavior = new FlyWithWings();
         quackBehavior = new Quack();

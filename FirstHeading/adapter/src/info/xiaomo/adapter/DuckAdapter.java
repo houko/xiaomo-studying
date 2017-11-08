@@ -1,9 +1,7 @@
 package info.xiaomo.adapter;
 
-import info.xiaomo.strategy.bean.RedHeadDuck;
-import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.bean.base.AbstractDuck;
 import info.xiaomo.strategy.behavior.fly.impl.FlyNotWay;
-import info.xiaomo.strategy.behavior.quack.impl.MuteQuack;
 import info.xiaomo.strategy.behavior.quack.impl.Quack;
 
 /**
@@ -12,15 +10,17 @@ import info.xiaomo.strategy.behavior.quack.impl.Quack;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
  * Date  : 2017/7/17 20:35
  * desc  :
  * Copyright(©) 2017 by xiaomo.
+ *
+ * @author qq
  */
-public class DuckAdapter extends Duck{
+public class DuckAdapter extends AbstractDuck {
     private Cat cat;
 
     public DuckAdapter(Cat cat) {

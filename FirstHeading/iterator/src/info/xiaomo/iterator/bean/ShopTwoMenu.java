@@ -1,7 +1,6 @@
 package info.xiaomo.iterator.bean;
 
 import info.xiaomo.iterator.Iterator;
-import info.xiaomo.iterator.ShopOneIterator;
 import info.xiaomo.iterator.ShopTwoIterator;
 
 /**
@@ -10,7 +9,7 @@ import info.xiaomo.iterator.ShopTwoIterator;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856

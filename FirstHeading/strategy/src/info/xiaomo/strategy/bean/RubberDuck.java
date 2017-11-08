@@ -1,6 +1,6 @@
 package info.xiaomo.strategy.bean;
 
-import info.xiaomo.strategy.bean.base.Duck;
+import info.xiaomo.strategy.bean.base.AbstractDuck;
 import info.xiaomo.strategy.behavior.fly.impl.FlyRocketPower;
 import info.xiaomo.strategy.behavior.quack.impl.Quack;
 
@@ -10,7 +10,7 @@ import info.xiaomo.strategy.behavior.quack.impl.Quack;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/syoubaku
  * email: xiaomo@xiamoo.info
  * QQ_NO: 83387856
@@ -18,7 +18,7 @@ import info.xiaomo.strategy.behavior.quack.impl.Quack;
  * Description: 火箭鸭
  * Copyright(©) 2017 by xiaomo.
  */
-public class RubberDuck extends Duck {
+public class RubberDuck extends AbstractDuck {
 
     public RubberDuck() {
        flyBehavior = new FlyRocketPower();

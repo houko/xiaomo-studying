@@ -1,7 +1,6 @@
 package info.xiaomo.observer;
 
 import info.xiaomo.observer.bean.WeatherData;
-import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -9,7 +8,7 @@ import info.xiaomo.observer.display.impl.CurrentConditionsDisplay;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
- * author: xiaomo
+ * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiamoo.info
  * QQ    : 83387856
