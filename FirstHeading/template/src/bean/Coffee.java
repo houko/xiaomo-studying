@@ -1,7 +1,4 @@
-package info.xiaomo.template;
-
-import info.xiaomo.template.bean.Coffee;
-import info.xiaomo.template.bean.Tea;
+package bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -13,16 +10,20 @@ import info.xiaomo.template.bean.Tea;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/7/17 20:48
- * desc  : 模板方法
+ * Date  : 2017/7/17 20:53
+ * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class TemplateMain {
-    public static void main(String[] args) {
-        Tea tea = new Tea();
-        tea.prepareRecipe();
-
-        Coffee coffee = new Coffee();
-        coffee.prepareRecipe();
+public class Coffee extends AbstractCaffeineBeverage {
+    @Override
+    void brew() {
+        System.out.println("用热水泡咖啡");
     }
+
+    @Override
+    void addCondiments() {
+        System.out.println("添加糖和牛奶");
+    }
+
+
 }

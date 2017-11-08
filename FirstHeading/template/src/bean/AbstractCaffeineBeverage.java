@@ -1,4 +1,4 @@
-package info.xiaomo.template.bean;
+package bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -6,6 +6,7 @@ package info.xiaomo.template.bean;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
+ *
  * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
@@ -14,7 +15,7 @@ package info.xiaomo.template.bean;
  * desc  : 咖啡因饮料【基类】
  * Copyright(©) 2017 by xiaomo.
  */
-public abstract class CaffeineBeverage {
+public abstract class AbstractCaffeineBeverage {
 
 
     /**
@@ -27,8 +28,14 @@ public abstract class CaffeineBeverage {
         addCondiments();
     }
 
+    /**
+     * 生成
+     */
     abstract void brew();
 
+    /**
+     * 添加
+     */
     abstract void addCondiments();
 
 

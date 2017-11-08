@@ -1,4 +1,4 @@
-package info.xiaomo.template.bean;
+package bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -14,16 +14,15 @@ package info.xiaomo.template.bean;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Coffee  extends CaffeineBeverage{
+public class Tea extends AbstractCaffeineBeverage {
+
     @Override
     void brew() {
-        System.out.println("用热水泡咖啡");
+        System.out.println("用热水泡茶");
     }
 
     @Override
     void addCondiments() {
-        System.out.println("添加糖和牛奶");
+        System.out.println("添加柠檬");
     }
-
-
 }
