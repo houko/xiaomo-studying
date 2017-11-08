@@ -1,5 +1,8 @@
+package normal.impl;
+
 import genereate.GenerateHandler;
 import genereate.GenerateMessage;
+import normal.IFacade;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -10,17 +13,16 @@ import genereate.GenerateMessage;
  * github  : https://github.com/xiaomoinfo
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
- * Date    : 2017/11/8 14:32
- * desc    : facade最后做成静态
+ * Date    : 2017/11/8 14:47
+ * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Facade {
-
-    public static void generate() {
+public class FacadeOneImpl implements IFacade{
+    @Override
+    public void generate() {
         GenerateMessage message = new GenerateMessage();
         message.generete();
         GenerateHandler handler = new GenerateHandler();
         handler.generate();
     }
-
 }
