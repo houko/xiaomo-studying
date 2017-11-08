@@ -15,6 +15,6 @@ public class FacadeMain {
 
     public static void main(String[] args) {
         // 调用facade的方法即可,至于里面的业务交给facade去完成
-        new Facade().generate();
+        Facade.generate();
     }
 }

@@ -11,12 +11,12 @@ import genereate.GenerateMessage;
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
  * Date    : 2017/11/8 14:32
- * desc    :
+ * desc    : facade最后做成静态
  * Copyright(©) 2017 by xiaomo.
  */
 public class Facade {
 
-    public void generate() {
+    public static void generate() {
         GenerateMessage message = new GenerateMessage();
         message.generete();
         GenerateHandler handler = new GenerateHandler();
