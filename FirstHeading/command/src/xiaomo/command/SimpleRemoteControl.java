@@ -1,4 +1,6 @@
-package info.xiaomo.command.bean;
+package xiaomo.command;
+
+import xiaomo.command.command.Command;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -10,18 +12,18 @@ package info.xiaomo.command.bean;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/7/17 19:40
+ * Date  : 2017/7/17 19:41
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class TV {
+public class SimpleRemoteControl {
+    Command command;
 
-    public void on(){
-        System.out.println("打开电视");
+    public void setCommand(Command command) {
+        this.command = command;
     }
 
-    public void off(){
-        System.out.println("关掉电视");
+    public void buttonWasPressed() {
+        command.execute();
     }
-
 }

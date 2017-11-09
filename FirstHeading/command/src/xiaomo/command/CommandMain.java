@@ -1,17 +1,17 @@
-package info.xiaomo.command;
+package xiaomo.command;
 
-import info.xiaomo.command.bean.Light;
-import info.xiaomo.command.bean.TV;
-import info.xiaomo.command.command.Command;
-import info.xiaomo.command.command.impl.LightOffCommand;
-import info.xiaomo.command.command.impl.LightOnCommand;
-import info.xiaomo.command.command.impl.TVOffCommand;
-import info.xiaomo.command.command.impl.TVOnCommand;
+import xiaomo.command.bean.Light;
+import xiaomo.command.bean.TV;
+import xiaomo.command.command.Command;
+import xiaomo.command.command.impl.LightOffCommand;
+import xiaomo.command.command.impl.LightOnCommand;
+import xiaomo.command.command.impl.TVOffCommand;
+import xiaomo.command.command.impl.TVOnCommand;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static info.xiaomo.command.RemoteControl.RemoteType;
+import static xiaomo.command.RemoteControl.RemoteType;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～

@@ -1,6 +1,6 @@
-package info.xiaomo.command;
+package xiaomo.command;
 
-import info.xiaomo.command.command.Command;
+import xiaomo.command.command.Command;
 
 import java.util.HashMap;
 import java.util.Map;

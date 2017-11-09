@@ -1,6 +1,4 @@
-package info.xiaomo.command;
-
-import info.xiaomo.command.command.Command;
+package xiaomo.command.bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -12,18 +10,18 @@ import info.xiaomo.command.command.Command;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/7/17 19:41
+ * Date  : 2017/7/17 19:40
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class SimpleRemoteControl {
-    Command command;
+public class Light {
 
-    public void setCommand(Command command) {
-        this.command = command;
+    public void on(){
+        System.out.println("打开灯");
     }
 
-    public void buttonWasPressed() {
-        command.execute();
+    public void off(){
+        System.out.println("关掉灯");
     }
+
 }

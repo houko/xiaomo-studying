@@ -1,7 +1,7 @@
-package info.xiaomo.command.command.impl;
+package xiaomo.command.command.impl;
 
-import info.xiaomo.command.bean.Light;
-import info.xiaomo.command.command.Command;
+import xiaomo.command.bean.Light;
+import xiaomo.command.command.Command;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
