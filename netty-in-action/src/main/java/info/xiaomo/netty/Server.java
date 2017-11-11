@@ -15,6 +15,7 @@ import io.netty.handler.stream.ChunkedWriteHandler;
  * Today the best performance  as tomorrow newest starter!
  * Created by IntelliJ IDEA.
  * <p>
+ *
  * @author : xiaomo
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
@@ -36,14 +37,10 @@ public class Server {
                     @Override
                     protected void initChannel(SocketChannel ch) throws Exception {
                         ChannelPipeline pipeline = ch.pipeline();
-                        pipeline.addLast("http-codec",
-                                new HttpServerCodec());
-                        pipeline.addLast("aggregator",
-                                new HttpObjectAggregator(65536));
-                        ch.pipeline().addLast("http-chunked",
-                                new ChunkedWriteHandler());
-                        pipeline.addLast("handler",
-                                new WebSocketServerHandler());
+                        pipeline.addLast(new HttpServerCodec());
+                        pipeline.addLast(new HttpObjectAggregator(65536));
+                        ch.pipeline().addLast(new ChunkedWriteHandler());
+                        pipeline.addLast(new WebSocketServerHandler());
                     }
                 });
         bootstrap.option(ChannelOption.SO_KEEPALIVE, true);
