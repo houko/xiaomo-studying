@@ -16,3 +16,7 @@
 - about-linux-usage: linux 相关笔记
 - netty-in-action: netty实战
 - thinking-in-java: java编程思想
+
+### 值得参考的项目
+- [java-design-patterns:目前github上星数最多的repo](https://github.com/iluwatar/java-design-patterns)
+- [java编程思想对应的一些例子](https://github.com/niushuai/thinking_in_java)
