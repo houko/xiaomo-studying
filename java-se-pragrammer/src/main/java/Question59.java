@@ -1,4 +1,5 @@
-package bean;
+import bean.A;
+import bean.B;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -9,21 +10,16 @@ package bean;
  * github  : https://github.com/xiaomoinfo
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
- * Date    : 2017/11/16 17:54
+ * Date    : 2017/11/17 17:16
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class B extends A {
-
-    public void mX() {
-        System.out.println("Xm2");
+public class Question59 {
+    public static void main(String[] args) {
+        A xRef = new B();
+        B yRef = (B)xRef;
+        yRef.mY();
+        xRef.mX();
     }
 
-    public void mY() {
-        System.out.println("Ym");
-    }
-
-    public String doStuff(String msg) {
-        return msg.replace("a", "e");
-    }
 }

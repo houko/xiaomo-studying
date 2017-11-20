@@ -14,6 +14,11 @@ package bean;
  * Copyright(©) 2017 by xiaomo.
  */
 public class A {
+
+    public void mX(){
+        System.out.println("Xm1");
+    }
+
     public String doStuff(String msg ){
         return msg;
     }

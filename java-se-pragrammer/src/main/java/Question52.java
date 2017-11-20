@@ -1,5 +1,3 @@
-package bean;
-
 /**
  * 把今天最好的表现当作明天最新的起点．．～
  * いま 最高の表現 として 明日最新の始発．．～
@@ -9,21 +7,13 @@ package bean;
  * github  : https://github.com/xiaomoinfo
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
- * Date    : 2017/11/16 17:54
+ * Date    : 2017/11/17 16:24
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class B extends A {
-
-    public void mX() {
-        System.out.println("Xm2");
-    }
-
-    public void mY() {
-        System.out.println("Ym");
-    }
-
-    public String doStuff(String msg) {
-        return msg.replace("a", "e");
+public class Question52 {
+    public static void main(String[] args) {
+        String str = "Mary Brown";
+        System.out.println(str.substring(0,3) + str.substring(6,10));
     }
 }
