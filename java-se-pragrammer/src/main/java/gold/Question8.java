@@ -1,10 +1,8 @@
 package gold;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
-import java.util.stream.Collectors;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -19,6 +17,15 @@ import java.util.stream.Collectors;
  * Date  : 2017/12/9 15:23
  * desc  :
  * Copyright(©) 2017 by xiaomo.
+ * <p>
+ * allMatch的作用是 是否全匹配(功能类似于下面的写法)
+ * <p>
+ * for(e:list){
+ * if(!n.test(e)){
+ * return false
+ * }
+ * }
+ * return true
  */
 public class Question8 {
     public static void main(String[] args) {
@@ -28,8 +35,5 @@ public class Question8 {
             return n.contains("red");
         };
         colors.stream().filter(c -> c.length() > 3).allMatch(test);
-
-        List<String> worldList = new ArrayList<>();
-        List<String> output = worldList.stream().map(String::toUpperCase).collect(Collectors.toList());
     }
 }
