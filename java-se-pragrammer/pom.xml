@@ -19,5 +19,14 @@
     <version>2017.1</version>
     <modelVersion>4.0.0</modelVersion>
 
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+            <version>5.1.38</version>
+        </dependency>
+    </dependencies>
+
 
 </project>
