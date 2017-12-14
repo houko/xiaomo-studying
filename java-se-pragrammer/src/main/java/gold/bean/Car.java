@@ -10,30 +10,21 @@ package gold.bean;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/12/13 21:01
+ * Date  : 2017/12/14 10:06
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Book {
-
-    int id;
+public class Car {
     String name;
 
-    public Book(int id, String name) {
-        this.id = id;
+    public Car(String name) {
         this.name = name;
     }
 
-    public boolean equals(Object obj) {
-        boolean output = false;
-        Book book = (Book) obj;
-        if (this.name.equals(book.name)) {
-            output = true;
-        }
-        return output;
-    }
-
-    private String read(String bname) {
-        return "Read" + bname;
+    @Override
+    public String toString() {
+        return "Car{" +
+                "name='" + name + '\'' +
+                '}';
     }
 }
