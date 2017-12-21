@@ -17,7 +17,7 @@ import java.io.InputStreamReader;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question2 {
+public class Question02 {
     public static void main(String[] args) {
         int i;
         char c;
