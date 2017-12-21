@@ -4,6 +4,7 @@ import gold.bean.Continent;
 import gold.bean.Country;
 
 import java.util.Arrays;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -31,7 +32,7 @@ public class Question50 {
         );
 
         Map<Continent, List<String>> collect = countries.stream()
-                .collect(Collectors.groupingBy(Country::getRegion, Collectors.mapping(Country::getName, Collectors.toList())));
+                .collect(Collectors.groupingBy(Country::getRegion, LinkedHashMap::new, Collectors.mapping(Country::getName, Collectors.toList())));
         System.out.println(collect);
 
     }
