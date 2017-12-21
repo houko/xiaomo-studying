@@ -10,23 +10,17 @@ package gold.bean;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/12/12 20:09
+ * Date  : 2017/12/21 17:06
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public enum USCurrency {
-    PENNY(1),
-    NICKLE(5),
-    DIME(10),
-    QUARTER(25);
-
-    private int value;
-
-    USCurrency(int value) {
-        this.value = value;
+public class Folder implements AutoCloseable {
+    @Override
+    public void close() {
+        System.out.println("close");
     }
 
-    public int getValue() {
-        return value;
+    public void open(){
+        System.out.println("Open");
     }
 }

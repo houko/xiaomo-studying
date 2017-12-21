@@ -1,4 +1,6 @@
-package gold.bean;
+package gold;
+
+import gold.bean.Folder;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -10,23 +12,14 @@ package gold.bean;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/12/12 20:09
+ * Date  : 2017/12/21 17:07
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public enum USCurrency {
-    PENNY(1),
-    NICKLE(5),
-    DIME(10),
-    QUARTER(25);
-
-    private int value;
-
-    USCurrency(int value) {
-        this.value = value;
-    }
-
-    public int getValue() {
-        return value;
+public class Question38 {
+    public static void main(String[] args) {
+        try (Folder f = new Folder()) {
+            f.open();
+        }
     }
 }
