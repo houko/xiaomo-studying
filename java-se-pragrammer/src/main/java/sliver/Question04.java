@@ -1,3 +1,5 @@
+package sliver;
+
 ///**
 // * 把今天最好的表现当作明天最新的起点．．～
 // * いま 最高の表現 として 明日最新の始発．．～
@@ -19,7 +21,7 @@
 // * <p>
 // * Answer: D
 // */
-//public class Question04 {
+public class Question04 {
 //    String name;
 //    int age = 25;
 //
@@ -60,4 +62,4 @@
 //        this.age = age;
 //    }
 //
-//}
+}
