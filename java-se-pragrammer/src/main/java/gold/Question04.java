@@ -14,7 +14,7 @@ package gold;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question4 {
+public class Question04 {
     public static void main(String[] args) {
         int[] x = {6, 7, 8};
         for (int i : x) {

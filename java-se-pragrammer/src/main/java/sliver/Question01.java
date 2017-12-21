@@ -9,20 +9,28 @@ package sliver;
  * github  : https://github.com/xiaomoinfo
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
- * Date    : 2017/11/15 19:58
+ * Date    : 2017/11/13 16:52
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question7 {
+public class Question01 {
+
+    static int count = 0;
+    int i = 0;
+
     public static void main(String[] args) {
-        int[] lst = {1, 2, 3, 4, 5, 4, 3, 2, 1};
-        int sum = 0;
-        for (int frnt = 0, real = lst.length - 1; frnt < 5 && real >= 5; ) {
-            System.out.println("frnt :" + frnt + " real:" + real);
-            sum = sum + lst[frnt] + lst[real];
-            frnt++;
-            real--;
+        Question01 one = new Question01();
+        Question01 two = new Question01();
+        one.changeCount();
+        two.changeCount();
+        System.out.println(one.count + ":" + two.count);
+        // 10:10
+    }
+
+    public void changeCount() {
+        while (i < 5) {
+            i++;
+            count++;
         }
-        System.out.println(sum);   // 20
     }
 }

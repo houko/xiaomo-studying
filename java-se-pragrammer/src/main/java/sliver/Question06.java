@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question6 {
+public class Question06 {
     public static void main(String[] args) {
         LocalDate date1 = LocalDate.now();
         LocalDate date2 = LocalDate.of(2014, 6, 20);

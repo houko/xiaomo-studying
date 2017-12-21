@@ -19,23 +19,23 @@
 // * <p>
 // * Answer: D
 // */
-//public class Question4 {
+//public class Question04 {
 //    String name;
 //    int age = 25;
 //
-//    public Question4(String name) {
+//    public Question04(String name) {
 //        this();                   // line n1
 //        setName(name);
 //    }
 //
-//    public Question4(String name, int age) {
-//        Question4(name);          // line n2
+//    public Question04(String name, int age) {
+//        Question04(name);          // line n2
 //        setAge(age);
 //    }
 //
 //    public static void main(String[] args) {
-//        Question4 one = new Question4("Jesse");
-//        Question4 two = new Question4("Walter", 52);
+//        Question04 one = new Question04("Jesse");
+//        Question04 two = new Question04("Walter", 52);
 //        System.out.println(one.show());
 //        System.out.println(two.show());
 //    }

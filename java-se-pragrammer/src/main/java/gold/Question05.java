@@ -14,7 +14,7 @@ package gold;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question5 {
+public class Question05 {
     public static void main(String[] args) {
         StringBuffer message = new StringBuffer("hello java!");
         int pos;

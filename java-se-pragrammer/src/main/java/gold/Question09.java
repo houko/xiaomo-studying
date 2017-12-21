@@ -14,7 +14,7 @@ package gold;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question9 {
+public class Question09 {
     public static void main(String[] args) {
         int [] xx = null;
         for (int i : xx) {

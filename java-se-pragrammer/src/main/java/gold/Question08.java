@@ -27,7 +27,7 @@ import java.util.function.Predicate;
  * }
  * return true
  */
-public class Question8 {
+public class Question08 {
     public static void main(String[] args) {
         List<String> colors = Arrays.asList("red", "green", "yellow");
         Predicate<String> test = n -> {

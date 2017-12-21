@@ -17,7 +17,7 @@ import sliver.bean.Mid;
  * Answer:AC
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question5 extends Mid {
+public class Question05 extends Mid {
 
     public static void main(String[] args) {
         int n1 = 22, n2 = 2;
@@ -25,9 +25,9 @@ public class Question5 extends Mid {
 //        System.out.println(n3);
     }
 
-    // A: Question5 q = new Question5(); n3 = q.findMid(n1,n2)   //  12
+    // A: Question05 q = new Question05(); n3 = q.findMid(n1,n2)   //  12
     // B: int n3 = super.findMid(n1,n3);   // 编译错误(定义重复，在静态方法中调用非静态方法)
-    // C. Question5 c = new Mid(); int n3 = c.findMid(n1, n2);  // 12
-    // D. Mid m1 = new Question5(); int 	n3 = m1.findMid(n1, n2);   // 父子关系颠倒
-    // E. int n3 = Question5.findMid(n1, n2);   // 编译错误
+    // C. Question05 c = new Mid(); int n3 = c.findMid(n1, n2);  // 12
+    // D. Mid m1 = new Question05(); int 	n3 = m1.findMid(n1, n2);   // 父子关系颠倒
+    // E. int n3 = Question05.findMid(n1, n2);   // 编译错误
 }

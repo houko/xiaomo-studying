@@ -13,7 +13,7 @@ package sliver;
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question3 {
+public class Question03 {
     public static void main(String[] args) {
         System.out.println("which three are advantages of the java exception mechanism?");
         System.out.println("A: Improves the program structure because the error handling code is separated from the normal program function");

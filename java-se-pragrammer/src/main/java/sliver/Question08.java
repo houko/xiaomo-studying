@@ -16,7 +16,7 @@ import java.time.format.DateTimeFormatter;
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question8 {
+public class Question08 {
     public static void main(String[] args) {
         LocalDate date = LocalDate.parse("2014-05-04");
         String format = date.format(DateTimeFormatter.ISO_ZONED_DATE_TIME);

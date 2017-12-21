@@ -19,7 +19,7 @@ import java.sql.Statement;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question7 {
+public class Question07 {
     public static void main(String[] args) {
         try {
             Connection connection = DriverManager.getConnection("jdbc:mysql://106.15.188.160:3306/xiaomo?characterEncoding=UTF8", "xiaomo", "xiaomo");

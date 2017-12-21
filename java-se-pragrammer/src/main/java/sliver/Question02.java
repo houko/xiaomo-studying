@@ -9,28 +9,18 @@ package sliver;
  * github  : https://github.com/xiaomoinfo
  * email   : xiaomo@xiaomo.info
  * QQ      : 83387856
- * Date    : 2017/11/13 16:52
+ * Date    : 2017/11/13 17:33
  * desc    :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question1 {
-
-    static int count = 0;
-    int i = 0;
-
+public class Question02 {
     public static void main(String[] args) {
-        Question1 one = new Question1();
-        Question1 two = new Question1();
-        one.changeCount();
-        two.changeCount();
-        System.out.println(one.count + ":" + two.count);
-        // 10:10
+        String product = "Pen";
+        product.toLowerCase();
+        product.concat(" BOX".toLowerCase());
+        System.out.println(product.substring(4, 6));
+        // 运行时异常
     }
 
-    public void changeCount() {
-        while (i < 5) {
-            i++;
-            count++;
-        }
-    }
+
 }
