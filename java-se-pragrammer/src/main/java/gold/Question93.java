@@ -4,6 +4,7 @@ import gold.bean.Student;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 /**
@@ -28,7 +29,7 @@ public class Question93 {
                 new Student("java ee", "t", "d")
         );
 
-        students.stream().collect(Collectors.groupingBy(Student::getCourse))
-                .forEach((src, res) -> System.out.print(src));
+        Map<String, List<Student>> collect = students.stream().collect(Collectors.groupingBy(Student::getCourse));
+        collect.forEach((src, res) -> System.out.print(src + "  " + res));
     }
 }
