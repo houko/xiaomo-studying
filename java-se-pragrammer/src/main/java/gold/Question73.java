@@ -1,6 +1,8 @@
 package gold;
 
-import java.util.concurrent.RecursiveAction;
+import gold.bean.Sum;
+
+import java.util.concurrent.ForkJoinPool;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -16,10 +18,10 @@ import java.util.concurrent.RecursiveAction;
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question73  extends RecursiveAction{
-
-    @Override
-    protected void compute() {
-
+public class Question73 {
+    public static void main(String[] args) {
+        ForkJoinPool fjPool = new ForkJoinPool();
+        int data[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        fjPool.invoke(new Sum(data, 0, data.length));
     }
 }
