@@ -22,7 +22,7 @@ public class Question02 {
         int i;
         char c;
         try {
-            FileInputStream fis = new FileInputStream("G:\\IdeaProject\\BookNote\\java-se-pragrammer\\src\\main\\java\\gold\\course.txt");
+            FileInputStream fis = new FileInputStream("G:\\IdeaProject\\BookNote\\java-se-programmer\\src\\main\\java\\gold\\course.txt");
             InputStreamReader isr = new InputStreamReader(fis);
             {
                 while (isr.ready()) {
