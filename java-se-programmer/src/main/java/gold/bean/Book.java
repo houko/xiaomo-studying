@@ -33,6 +33,8 @@ public class Book {
         return output;
     }
 
+
+
     public int getId() {
         return id;
     }
@@ -49,7 +51,7 @@ public class Book {
         this.name = name;
     }
 
-    private String read(String bname) {
+    public String read(String bname) {
         return "Read" + bname;
     }
 }

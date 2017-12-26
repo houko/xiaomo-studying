@@ -1,10 +1,4 @@
-package gold;
-
-import gold.bean.Bird;
-import gold.bean.Penguin;
-
-import java.util.function.Consumer;
-import java.util.function.Supplier;
+package gold.bean;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -16,19 +10,14 @@ import java.util.function.Supplier;
  * github: https://github.com/xiaomoinfo
  * email : xiaomo@xiaomo.info
  * QQ    : 83387856
- * Date  : 2017/12/18 16:51
+ * Date  : 2017/12/26 15:23
  * desc  :
  * Copyright(©) 2017 by xiaomo.
  */
-public class Question14 {
-    public static void main(String[] args) {
-        fly(Bird::new);
-        fly(Penguin::new);
+public class Ebook  extends Book{
 
-    }
-
-    static void fly(Supplier<Bird> birdConsumer) {
-        birdConsumer.get().fly();
+    public Ebook(int id, String name) {
+        super(id, name);
     }
 
 }
