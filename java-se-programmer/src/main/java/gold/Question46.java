@@ -20,5 +20,8 @@ import java.time.Month;
 public class Question46 {
     public static void main(String[] args) {
         LocalDate date = LocalDate.of(2015, Month.FEBRUARY,14);
+        LocalDate nextYear = date.plusYears(1);
+        nextYear.plusDays(15);
+        System.out.println(nextYear);
     }
 }

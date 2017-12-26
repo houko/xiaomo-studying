@@ -17,15 +17,9 @@ import gold.bean.Candidate;
  * Copyright(©) 2017 by xiaomo.
  */
 public class Question27 {
-    public static void main(String[] args) {
-        Candidate c = null;
-        Candidate c1 = null;
-        try {
-            c = new Candidate("", 1);
-            c1 = new Candidate("", 1);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    public static void main(String[] args) throws Exception {
+        Candidate c = new Candidate("", 1);
+        Candidate c1 = new Candidate("", 1);
         System.out.println(c);
         System.out.println(c1);
     }
