@@ -4,12 +4,30 @@
 - netty4.x:5被作者废弃了23333333
 
 
-### 正在看或准备看的  
--  设计模式相关:《大话java设计模式》、《设计模式之蝉》、《First Heading》   
--  代码能力:《java核心思想》、《高效java》、《深入理解Java虚拟机：JVM高级特性与最佳实践》、《The elements of Java style》    
--  linux相关:《鸟哥的私房菜》、《linux就该这么学》      
--  网络编程 :《netty实战》       
--  代码重构 :《重构 改善既有代码的设计》     
+### 正在看或准备看的  
+◎ 设计模式相关:    
+- 《大话java设计模式》
+- 《设计模式之蝉》
+- 《First Heading》   
+
+#### ◎ 代码能力:   
+- 《java核心思想》
+- 《effective java》
+- 《深入理解Java虚拟机：JVM高级特性与最佳实践》
+- 《The elements of Java style》    
+- 《java 核心卷I》      
+- 《java 核心卷II》      
+- 《重构-改善既有代码设计》   
+
+#### ◎ linux相关:
+- 《鸟哥的私房菜》
+- 《linux就该这么学》  
+
+#### ◎ 网络编程 :
+- 《netty实战》    
+
+#### ◎ 代码重构 :
+- 《重构 改善既有代码的设计》     
 
 ### 仓库目录结构
 - java-design-pattern：java设计模式
