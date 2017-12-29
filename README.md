@@ -12,9 +12,12 @@
 
 #### ◎ 代码能力:   
 - 《java核心思想》
-- 《高效java》
+- 《effective java》
 - 《深入理解Java虚拟机：JVM高级特性与最佳实践》
 - 《The elements of Java style》    
+- 《java 核心卷I》      
+- 《java 核心卷II》      
+- 《重构-改善既有代码设计》   
 
 #### ◎ linux相关:
 - 《鸟哥的私房菜》
