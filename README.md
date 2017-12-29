@@ -11,7 +11,7 @@
 - 《First Heading》   
 
 ◎ 代码能力:   
-《java核心思想》
+- 《java核心思想》
 - 《高效java》
 - 《深入理解Java虚拟机：JVM高级特性与最佳实践》
 - 《The elements of Java style》    
