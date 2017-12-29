@@ -26,7 +26,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
+                <version>LATEST</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
