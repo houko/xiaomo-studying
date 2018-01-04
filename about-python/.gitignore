@@ -1,0 +1,12 @@
+# Xcode
+.idea
+*.iml
+target
+
+#python
+vendor
+composer.lock
+__pycache__
+output
+.DS_Store
+venv
