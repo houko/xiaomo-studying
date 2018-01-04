@@ -1,0 +1,1000 @@
+cd ..
+ls
+clear
+ls
+cd src/
+ls
+cd ..
+rm -rf src/
+ls
+clear
+ls
+cd games/
+ls
+cd ..
+ls
+rm -rf games/
+ls
+clear
+ls
+cd include/
+ls
+cd ..
+ls
+cd curl/
+ls
+cd ..
+ls
+clear
+ls
+cd otp_src_20.0/
+ls
+cd bin/
+ls
+erl
+clear
+ls
+cd ..
+ls
+clear
+ls
+cd ..
+ls
+clear
+ls
+mv otp_src_20.0/ erlang
+ls
+clear
+ls
+cd zend/
+ls
+cd ..
+ls
+clear
+ls
+cd java/
+ls
+cd jdk
+cd jdk-9/
+ls
+cd bin/
+ls
+java --version
+java -verion
+java
+spirng -verion
+spring -version
+spring --version
+sdk -version
+sdk version
+clear
+la
+ls
+vim /etc/profile
+where java
+whereis java
+cd /usr/local/share/
+ls
+cd /usr/share/java/
+ls
+cd erlang/
+ls
+java --version
+java -version
+echo $JAVA_HOME
+which java
+ls -lrt /usr/bin/java
+cd /usr/lib/jvm
+echo $JAVA_HOME
+s -lrt /usr/bin/
+ls -lrt /usr/bin/
+ls -lrt /usr/bin/java
+ls -lrt /etc/alternatives/java
+cd /usr/java/
+ls
+cd latest
+ls
+cd ..
+ls
+clear
+ls
+cd default
+ls
+cd ..
+ls
+clear
+ls
+cd ..
+ls
+cd local/lja
+cd local/java/
+ls
+cd jdk
+cd jdk-9/
+ls
+cd ..
+ls
+clear
+ls
+mv * /usr/java/
+ls
+cd ..
+ls
+cd java/
+ls
+pwd
+touch java在usr/java下面
+touch java在usr-java下面
+ls
+cd /usr/java/
+ls
+vim /etc/profile
+source ~/.bashrc
+java -version
+java --version
+java -version
+rpm -e java
+rpm -pa|grep jdk
+rpm -qa|grep jdk
+rpm -e --nodeps jdk1.8.0_121/
+rpm -e --nodeps jdk
+rpm -e --nodeps jdk1.8.0_121-1.8.0_121-fcs.x86_64
+ls
+java -version
+rm -rf /usr/local/java/
+ls
+java -version
+ln -s /usr/java/jdk-9/bin/java /usr/bin/java
+java
+java -version
+clear
+ls
+vim /etc/profile
+ls
+clear
+ls
+jps
+vim /etc/profile
+source ~/.bashrc
+jps
+cd /www/wwwroot/python3/
+unzip python3-cookbook.zip
+clear
+ls
+mv python3-cookbook/* .
+mv -r python3-cookbook/* .
+mv -f python3-cookbook/* .
+ls
+cd python3-cookbook
+ls
+mv python3-cookbook-latest/* ./
+ls
+rm -rf python3-cookbook-latest/
+ls
+clear
+ls
+cd /usr/local/maven-3.5.0/
+cd /www/wwwroot/online/so/data/Group/public/home/
+ls
+clear
+pwd
+vim ~/.bashrc
+source ~/.bashrc
+tostatic
+cd
+clear
+ls
+tostatic
+ls
+cd /usr/java/jdk-9/
+pwd
+cd bin/
+ls
+pwd
+cd ..
+ls
+pwd
+vim /etc/profile
+clear
+ls
+vim /etc/profile
+echo $JAVA_HOME
+vim /etc/profile
+echo $JAVA_HOME
+source /etc/profile
+echo $JAVA_HOME
+java -version
+jps
+jshell
+cd /usr/java/jdk-9/bin/
+ls
+clear
+ls
+vim /etc/profile
+jps
+java -version
+ls
+jshell
+./shell
+sh jshell
+./jshell
+vim /etc/profile
+cd /usr/java/jdk9
+cd /usr/java/jdk-9/
+cd bin/
+ls
+./jcontrol
+clear
+ls
+javac
+java
+clear
+jps
+./jps
+vim /etc/profile
+pwd
+echo $JAVA_HOME
+ls
+cd ..
+ls
+cd lib/
+ls
+vim /etc/profile
+source /etc/profile
+jps
+jshell
+free -,
+free -m
+cd /data/game/
+ls
+cd server/
+ls
+cd ..
+ls
+cd ..
+ls
+cd game/
+ls
+cd server/
+ls
+cd ..
+ls
+clear
+ls
+rz
+ls
+tar -zxvf s
+tar -zxvf s1.tar.gz
+rz -E
+tar -zxvf server.tar.gz
+ls
+clear
+ls
+rm -rf s1.tar.gz
+ls
+clear
+ls
+rm -rf server.tar.gz
+cd s
+cd s1/
+ls
+cd bin/
+ls
+rm -rf serverOptions.sh.bak
+ls
+vim run.ini
+pwd
+vim run.ini
+ls
+vim serverOptions.sh
+ls
+cd ..
+ls
+cd core/
+ls
+cd ..
+ls
+jps
+cd ocn
+cd conf/
+ls
+vim config.properties
+cd /data/game/s1/data/
+ls
+git pull
+ls
+cd ..
+ls
+cd bin/
+ls
+sh serverOptions.sh all start
+tail -F ../logs/MainServer.log
+cd ..
+ls
+cd logs/
+ls
+rm -rf *
+jps
+clear
+ls
+jps
+cd ..
+ls
+vim ~/.bashrc
+source ~/.bashrc
+showlog
+cd /data/game/s1/logs/
+ls
+cd ..
+ls
+cd bin/
+sh serverOptions.sh all start
+ls
+cat game.out
+vim serverOptions.sh
+ls
+rm -rf game.out
+ls
+sh serverOptions.sh game start
+ls
+cat game.out
+cd ..
+ls
+cd core/
+ls
+sz server-0.0.1.jar
+ls
+cd ..
+ls
+cat version
+cd bin/
+ls
+clear
+ls
+sh serverOptions.sh all start
+jps
+vim /etc/profile
+source /etc/profile
+jps
+jps -ln
+jps -lm
+cd /usr/java/jdk1.7.0_80/
+pwd
+updateblog
+cd /op
+cd /opt/
+ls
+vim ~/.bashrc
+cd /www/wwwroot/bin/
+vim updateBlog.sh
+cd /root/blog/
+rm -rf package.json
+git pull
+updateblog
+git pull
+updateblog
+cd /root/blog/
+updateb
+updateblog
+cd /www/wwwroot/
+ls
+cd /op
+cd /opt/
+ls
+java -version
+cd /www/wwwroot/online/
+lcd ..
+cd. .
+ls
+cd ..
+ls
+cd wp/
+ls
+cd /www/wwwroot/
+ls
+cd wp/
+ls
+cd /etc/letsencrypt/live/clear
+updateblog
+cd /op
+cd /opt/
+ls
+cd idea/
+ls
+sh idea.sh
+sh idea.sh start
+sh start.sh
+jps
+clear
+ls
+updateblog
+cd /www/wwwroot/
+ls
+cd online/
+ls
+cd so/data/
+ls
+cd Group/public/home/电子书/
+ls
+rm -rf JAVA.zip
+rm -rf nodejs
+ls
+tar -zxvf nodejs.zip
+unzip nodejs.zip
+ls
+rm -rf nodejs.zip
+ls
+clear
+ls
+cd ..
+ls
+rm -rf 新建文件夹/
+ls
+tar -zxvf pdf 电子书/
+tar -zcvf pdf 电子书/
+sz pdf
+ls
+cd pdf
+ls
+rm -rf pdf
+tar -zcvf pdf.tar.gz 电子书/
+sz pdf.tar.gz
+cd /www/wwwroot/online/so/data/Group/public/home/
+ls
+cd 电子书/
+ls
+rm -rf nodejs/
+cd bootstrap/
+ls
+cd ..
+ls
+cd linux软件/
+ls
+rz -E
+java -version
+cd /usr/local/
+ls
+cd /usr/java/
+ls
+cat ping.pl
+vim ping.pl
+ls
+vim update.sh
+cd lo
+cd blog/
+ls
+cd /clear
+ls
+cd /www/
+ls
+clear
+ls
+cd Recycle_bin/
+ls
+cd ..
+ls
+cd backup/
+ls
+cat ftpd_backup.
+cat ftpd_backup.conf
+clear
+ls
+cd ..
+ls
+cd wwwroot/
+ls
+cd xiaomo/
+ls
+mkdir .well-known
+cd .well-known/
+ls
+mkdir pki-validation
+cd pki-validation/
+echo 201711060836445370c7sfkd2pcsuaza5l4o6d1s2j0qov5blfght0p4yzbd707j > fileauth.txt
+ls
+cd ..
+ls
+cd blog/
+ls
+mkdir .well-known
+cd .well-known/
+ls
+cd pk
+mkdir pki-validation
+cd pki-validation/
+ls
+echo 20171106083841693lxs37olcdzczfp7bs77cd0n43zpx0jtvy67c1te4a2ciuv5 > fileauth.txt
+pwd
+ls
+cd ..
+ls
+cd blog/
+ls
+mkdir .well-known
+cd .well-known/
+ls
+mkdir pki-validation
+cd pki-validation/
+ls
+echo 20171106083841693lxs37olcdzczfp7bs77cd0n43zpx0jtvy67c1te4a2ciuv5 > fileauth.txt
+cd /www/wwwroot/xiaomo/
+ls
+cd img/
+ls
+cd ..
+ls
+clear
+ls
+tar -zcvf img.tar.gz img/
+sz img.tar.gz
+updateblog
+free -m
+free
+free -m
+df -lh
+cd /usr/local/
+ls
+cd /opt/
+ls
+cd idea/
+ls
+sh start.sh
+redis
+npm2
+pm2
+npm -v
+node -v
+cd /www/wwwroot/
+ls
+cd resume/
+ls
+rz -E
+rm -rf index.pdf
+rz -E
+mkdir 4~
+rm -rf 4~
+ls
+mkdir .well-known
+cd .well-known/
+mkdir pki-validation
+echo 201711120152156addivql40jk2sww0szu1f2h9f7xhqgr71w13ayc7idqd8womd > fileauth.txt
+cd pki-validation/
+ls
+echo 201711120152156addivql40jk2sww0szu1f2h9f7xhqgr71w13ayc7idqd8womd > fileauth.txt
+vim fileauth.txt
+ls
+cd ..
+ls
+rm -rf fileauth.txt
+ls
+cd pki-validation/
+ls
+pwd
+cd ..
+cd..
+ls
+cd ..
+ls
+mkdir css
+mkdir js
+clear
+ls
+cd css/
+rz
+cd ../js/
+sz
+rz
+cd ..
+ls
+mv index.pdf
+mv index.pdf 胡朋-求职java服务端主程.pdf
+ls
+clear
+service mysql status
+service mysqld status
+mysql -uroot -p
+mysql -uxiaomo -pxiaomo
+mysql -uroot -p
+clear
+ls
+service mysqld restart
+mysql -uroot -phpandlp8187
+cd /www/wwwroot/online/so/data/Group/public/home/oracle认证/
+ls
+rz -E
+ls
+rm -rf 1z0-808.236q.pdf
+rm -rf 1z0-808.236q-考生亲测版.doc 1z0-808.236q-考生亲测版.doc
+ls
+rz -E
+ls
+rz -E
+cd /data/game/
+ls
+cd s1/
+ls
+cd /www/wwwroot/o
+ls
+cd /www/wwwroot/
+ls
+cd mysql/
+ls
+cd ..
+ls
+cd jar/
+ls
+cd ..
+ls
+cd bin/
+ls
+sh mysql.sh
+redis
+service redis status
+service redis start
+service redis stop
+service redis start
+redis
+which redis
+whereis redis
+where redis
+whichis redis
+which reids
+clear
+ls
+find / -name redis
+redis-cli
+redis-server status
+df -lh
+free -m
+tp
+top
+clear
+free -m
+df -lh
+top -t 10
+pidstat -t 10
+top -t 10
+top -n 1
+top -n 1 |grep Cpu
+clear
+ls
+updateblog
+ls
+vim shadowsocks.json
+cd /www/wwwroot/online/
+cd /www/server/nginx/
+ls
+cd conf/
+ls
+vim nginx.conf
+ls
+cd vhost/
+ls
+cd ..
+cd rewrite/
+ls
+cd /www/
+ls
+cd wwwroot/
+ls
+cd ..
+ls
+cd server/
+ls
+cd panel/
+ls
+cd vhost/
+ls
+cd nginx/
+ls
+vim mysql.xiaomo.info.conf
+updateblog
+cd /www/wwwroot/bin/datav/
+ls
+pwd
+sh /www/wwwroot/bin/datav/memory.sh
+free -m | sed -n '2p' | awk '{print "used mem is "$3"M,total mem is “$2"M,used percent is "$3/$2"%"}'
+free -m | sed -n '2p' | awk '{print "used mem is "$3"M,total mem ifree -m | grep 'Mem' | awk '{print $3}s “$2"M,used percent is "$3/$2"%"}'
+clear
+free -m | grep 'Mem' | awk '{print $3}'
+free -m
+free -m | grep 'Free' | awk '{print $3}'
+free -m | grep 'free' | awk '{print $3}'
+free -m | grep 'Fr' | awk '{print $3}'
+free -m | grep 'Mem' | awk '{print $3}'
+free -m | grep 'Mem' | awk '{print $2}
+free -m | grep 'Mem' | awk '{print $2}'
+free -m | grep 'Mem' | awk '{print $1}'
+free -m | grep 'Mem' | awk '{print $4}'
+free -m | grep 'Mem' | awk '{print $3}'
+free -m | grep 'Mem' | awk '{print $3}ls
+vim memory.sh
+sh /www/wwwroot/bin/datav/memory.sh
+vim memory.sh
+clear
+ls
+ls
+cd /www/wwwroot/
+ls
+cd bin/
+ls
+mkdir datav
+cd datav/
+ls
+free -m
+ls
+touch memory.sh
+vim memory.sh
+sh memory.sh
+clear
+ls
+pwd
+ls
+cd /www/wwwroot/datav/
+ls
+touch memory.php
+vim memory.php
+ls
+vim memory.php
+ls
+rm -rf memory.php
+ls
+git clone https://github.com/xiaomoinfo/DataV.git
+ls
+mv index.html DataV/
+mv 404.html DataV/
+ls
+cd DataV/
+ls
+cler
+clear
+ls
+updates
+updateblog
+clear
+cd
+ls
+cd /opt/
+ls
+rz -E
+sh merge.sh
+rz -E
+ls
+clear
+ls
+ sh merge.sh
+ls
+vim temp.sql
+rm -rf temp.sql
+cd eff.org/
+ls
+cd certbot/
+ls
+cd venv/
+ls
+cat certbot-auto-bootstrap-version.txt
+ls
+tobin
+updates
+updateblog
+clear
+cd /www/wwwroot/
+ls
+cd wp/
+ls
+cd ..
+ls
+cd datav/
+ls
+rz -E
+unzip phpems_zxmnks_v4.1.rar
+rm -rf phpems_zxmnks_v4.1.rar
+rz -E
+unzip phpems_zxmnks_v4.1.zip
+ls
+rm -rf phpems_zxmnks_v4.1.zip
+clear
+ls
+mv phpems_zxmnks_v4.1/ exam
+ls
+cd exam/
+ls
+mv -r phpems/ ../
+mv phpems/ ../
+ls
+cd ..
+rm -rf exam/
+ls
+cd phpems/
+ls
+sz phpems.sql
+ls
+cd lib/
+ls
+vim config.inc.php
+ls
+chmod 755 *
+ls
+chmod 600 *
+clear
+ls
+chmod 655 *
+chmod 700 *
+chmod 600
+chmod 600 *
+chmod 666 *
+cd /usr/local/tomcat/webapps/
+ls
+cd examples/
+ls
+cd WEB-INF/
+ls
+cd classes/
+ls
+cd con
+cd ..
+ls
+cd classes/
+ls
+cd dates/
+ls
+cd ..
+ls
+clkear
+clear
+ls
+cd ..
+ls
+cd ..
+ls
+clear
+ls
+cd WEB-INF/
+ls
+cd lib/
+ls
+cd ..
+ls
+clear
+ls
+cd classes/
+ls
+cd util/
+ls
+clear
+python -v
+python3
+pip
+pip install Pillow
+pip3 install Pillow
+clear
+cd /www/wwwroot/o
+
+cd /www/wwwroot/
+ls
+cd online/li
+cd online/so/
+ls
+cd ..
+ls
+cd so/
+ls
+cd data/
+ls
+cd ..
+ls
+cd data/
+ls
+rz -E
+ls
+unzip 2.0-4.25.zip
+ls
+rm -rf ChangeLog.md
+rm -rf index.php
+clear
+ls
+rm -rf app/
+rm -rf config/
+rm -rf plugins/
+ls
+clear
+ls
+rm -rf static/
+rm -rf session/
+ls
+clear
+ls
+rm -rf README.MD
+ls
+clear
+ls
+cd ..
+ls
+cd data/
+ls
+cm 2.0-4.25.zip ../
+ls
+cp 2.0-4.25.zip ../
+cd ..
+ls
+clear
+ls
+unzip 2.0-4.25.zip
+ls
+cd ./.
+cd ..
+ls
+chmod -R 777 /www/wwwroot/online/so/
+clear
+ls
+updates
+updateblog
+cd /www/wwwroot/online/so/data/Group/public/home/
+cd 电子书/
+ls
+cd docker/
+rz -E
+cd ..
+cd or
+ls
+cd ..
+ls
+cd oracle认证/
+ls
+rz -E
+clear
+ls
+os
+cd /www/wwwroot/
+cd ..
+cd server/data/
+ls
+clear
+ls
+ll
+ls
+whereis mysql
+whereis mysqlbinlog
+cd /www/server/mysql/
+ls
+cd bin/
+ls
+cd ..
+cd data/
+ls
+ll
+mysqlbinlog
+../mysql/bin/mysqlbinlog --help
+ll
+../mysql/bin/mysqlbinlog mysql-bin.000045 > 45.sql
+vim 45.sql
+cat 45.sql | grep 1513670473 >1513670473.sql
+vim 1513670473.sql
+vim 45.sql
+cat 45.sql | grep 37181271245586 > 37181271245586.sql
+vim 37181271245586.sql
+sz 37181271245586.sql
+cat 45.sql | grep -5 37181271245586 > 37181271245586.sql
+sz 37181271245586.sql
+clear
+ls
+rz -y
+ls
+mysql -umiracle_server -pxiaomo miracle_server < xx.sql
+vim /etc/my.cnf
+service mysql restart
+service mysqld restart
+vim /etc/my.cnf
+service mysqld restart
+updateblog
+service nginx status
+nginx -v
+updateblog
+updateblog o
+ls
+cat /tmp/panelBoot.pl
+uname
+uname -a
+rpm -qa |grep kernel
+updates
+updateblog
