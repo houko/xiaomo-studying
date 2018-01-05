@@ -2,7 +2,7 @@
 - jdk9:学东西当然学最新的
 - centerOS7: 暂时没体验出太大的不同（除了防火墙）
 - netty4.x:5被作者废弃了23333333
-
+- python3.6.4
 
 ### 正在看或准备看的  
 ◎ 设计模式相关:    
@@ -22,6 +22,11 @@
 #### ◎ linux相关:
 - 《鸟哥的私房菜》
 - 《linux就该这么学》  
+
+#### ◎ python相关:
+- [Python3基础教程从入门到精通](https://www.bilibili.com/video/av14886455/)
+- [用更优雅的python编程撩妹](https://www.bilibili.com/video/av17225258)
+- [Python tutorial](http://www.pythondoc.com/pythontutorial3/introduction.html)
 
 #### ◎ 网络编程 :
 - 《netty实战》    
