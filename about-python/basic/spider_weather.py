@@ -35,5 +35,5 @@ class WeatherIterable(Iterable):
         return WeatherIterator(self.cities)
 
 
-for x in WeatherIterable(['北京', '上海', '长春', '南京', '十堰', '武汉', '郑州', '合肥', '哈尔滨', '伊春', '鸡西']):
+for x in WeatherIterable(['杭州', '北京', '上海', '长春', '南京', '十堰', '武汉', '郑州', '合肥', '哈尔滨', '伊春', '鸡西']):
     print(x)
