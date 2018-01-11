@@ -9,6 +9,6 @@ res = json.loads(ret.content)
 print(res)
 
 print('\n')
-j = {'a': "abc", 'b': 'ddd'}
+j = {'c': "abc", 'a': 'ddd'}
 
-print(json.dumps(j))
+print(json.dumps(j, sort_keys=True))
