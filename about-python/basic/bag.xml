@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<messages id="10" queueId="2" package="com.sh.game.system.bag">
+
+    <bean class="BagItemBean">
+        <field type="long" name="lid" desc="唯一id"/>
+        <field type="int" name="itemId" desc="道具id"/>
+        <field type="int" name="count" desc="道具数量"/>
+        <field type="int" name="time" desc="过期时间"/>
+        <field type="byte" name="bind" desc="是否绑定"/>
+        <list type="byte" name="extraType" desc="额外属性key"/>
+        <list type="int" name="extraVlaue" desc="额外属性value，和key一一对应，该属性主要是装备使用，道具也可以偶尔使用"/>
+    </bean>
+
+    <bean class="InstanceItemBean">
+        <field type="int" name="globalId" desc="配置id"/>
+        <field type="int" name="useNum" desc="已使用次数"/>
+    </bean>
+
+
+    <bean class="BagEquipBean">
+        <field type="long" name="lid" desc="唯一id"/>
+        <field type="int" name="itemId" desc="道具id"/>
+        <field type="int" name="count" desc="道具数量"/>
+        <field type="int" name="time" desc="过期时间"/>
+        <field type="byte" name="bind" desc="是否绑定"/>
+        <list type="byte" name="extraType" desc="额外属性key"/>
+        <list type="int" name="extraVlaue" desc="额外属性value，和key一一对应，该属性主要是装备使用，道具也可以偶尔使用"/>
+    </bean>
+
+    <bean class="CoinBean">
+        <field type="int" name="itemId" desc="货币ID"/>
+        <field type="long" name="count" desc="货币数量"/>
+    </bean>
+
+    <message id="1" type="toServer" class="ReqBagInfoMessage" desc="请求背包信息">
+    </message>
+
+    <message id="2" type="toClient" class="ResBagInfoMessage" desc="返回请求背包">
+        <field type="int" name="emptyItemGridCount" desc="背包道具页签剩余空格的数量"/>
+        <field type="int" name="emptyEquipGridCount" desc="背包装备页签剩余空格的数量"/>
+        <field type="int" name="maxEquipGridCount" desc="背包装备页签总的格子的数量"/>
+        <field type="int" name="emptyRuneGridCount" desc="符文剩余格子"/>
+        <field type="int" name="maxRuneGridCount" desc="符文总格子"/>
+        <field type="int" name="addGridCount" desc="背包装备页签扩容的次数"/>
+        <list type="BagItemBean" name="itemList" desc="道具列表"/>
+        <list type="BagEquipBean" name="equipList" desc="装备列表"/>
+        <list type="BagEquipBean" name="runeList" desc="装备列表"/>
+        <list type="CoinBean" name="coinList" desc="货币列表"/>
+    </message>
+
+    <message id="3" type="toClient" class="ResBagChangeMessage" desc="背包发生变化">
+        <field type="int" name="emptyItemGridCount" desc="背包道具页签空格的数量"/>
+        <field type="int" name="emptyEquipGridCount" desc="背包装备页签空格的数量"/>
+        <field type="int" name="maxEquipGridCount" desc="背包装备页签总的格子的数量"/>
+        <field type="int" name="emptyRuneGridCount" desc="符文剩余格子"/>
+        <field type="int" name="maxRuneGridCount" desc="符文总格子"/>
+        <field type="int" name="action" desc="变化原因"/>
+        <list type="BagItemBean" name="itemList" desc="道具列表，变化这个消息如果itemId=null的话，那么这个索引的位置就被移除了，其他的则为变化"/>
+        <list type="BagEquipBean" name="equipList" desc="装备列表"/>
+        <list type="BagEquipBean" name="runeList" desc="装备列表"/>
+        <list type="CoinBean" name="coinList" desc="货币列表"/>
+        <list type="long" name="uniqueItemId" desc="道具出现空格时发"/>
+        <list type="long" name="uniqueEquipId" desc="移除装备时发"/>
+        <list type="long" name="uniqueRuneId" desc="移除符文时发"/>
+    </message>
+
+    <message id="4" type="toServer" class="ReqUseItemMessage" desc="请求使用道具">
+        <field type="int" name="count" desc="道具数量"/>
+        <field type="int" name="itemId" desc="道具id"/>
+    </message>
+
+    <message id="6" type="toClient" class="ResUseItemMessage" desc="使用道具返回消息">
+        <field type="int" name="itemId" desc="道具id"/>
+    </message>
+
+    <message id="7" type="toServer" class="ReqAddEquipMaxCountMessage" desc="增加装备页签格子上限消息">
+    </message>
+
+    <message id="9" type="toServer" class="ReqRecycleEquipmentMessage" desc="请求回收装备">
+        <list type="long" name="recycleList" desc="回收列表(唯一id)"/>
+    </message>
+
+    <message id="10" type="toClient" class="ResAddGridCountChangeMessage" desc="扩容次数变化的消息">
+        <field type="int" name="addGridCount" desc="背包装备页签扩容的次数"/>
+    </message>
+
+    <message id="11" type="toClient" class="ResRecycleEquipmentMessage" desc="回收装备"/>
+
+    <message id="12" type="toClient" class="ResBagChangeMessage2" desc="背包发生变化">
+        <field type="int" name="emptyItemGridCount" desc="背包道具页签空格的数量"/>
+        <field type="int" name="emptyEquipGridCount" desc="背包装备页签空格的数量"/>
+        <field type="int" name="maxEquipGridCount" desc="背包装备页签总的格子的数量"/>
+        <field type="int" name="emptyRuneGridCount" desc="符文剩余格子"/>
+        <field type="int" name="maxRuneGridCount" desc="符文总格子"/>
+        <field type="int" name="action" desc="变化原因"/>
+        <list type="BagItemBean" name="itemList" desc="道具列表，变化这个消息如果itemId=null的话，那么这个索引的位置就被移除了，其他的则为变化"/>
+        <list type="BagEquipBean" name="equipList" desc="装备列表"/>
+        <list type="BagEquipBean" name="runeList" desc="符文列表"/>
+        <list type="CoinBean" name="coinList" desc="货币列表"/>
+        <list type="long" name="uniqueItemId" desc="道具出现空格时发"/>
+        <list type="long" name="uniqueEquipId" desc="移除装备时发"/>
+        <list type="long" name="uniqueRuneId" desc="移除符文时发"/>
+    </message>
+
+    <message id="13" type="toClient" class="ResUseAttackDragMessage" desc="使用攻击药水的返回">
+        <field type="int" name="rate" desc="当前倍数"/>
+        <field type="int" name="instanceId" desc="副本id"/>
+        <field type="int" name="useCount" desc="使用次数"/>
+    </message>
+
+    <message id="14" type="toServer" class="ReqUseInstanceItemMessage" desc="请求使用副本道具">
+        <field type="int" name="uniqueId" desc="副本唯一id"/>
+        <field type="int" name="globalId" desc="globalId(35/36)"/>
+        <field type="int" name="instanceId" desc="副本id"/>
+        <field type="int" name="usedTime" desc="战报中时间 攻击药水使用要用"/>
+    </message>
+
+    <message id="15" type="toClient" class="ResGetAttackDragBuyCountMessage" desc="返回次数">
+        <list type="InstanceItemBean" name="useInfo" desc="道具使用信息"/>
+    </message>
+
+    <message id="16" type="toServer" class="ReqVipRecycleEquipmentMessage" desc="请求vip回收装备">
+        <list type="long" name="recycleList" desc="回收列表(唯一id)"/>
+    </message>
+
+
+</messages>
