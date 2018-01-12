@@ -12,11 +12,14 @@ print(rrow)
 print(rrow_value)
 
 ncols = rsheet.ncols
-rsheet.put_cell(0, ncols, xlrd.XL_CELL_TEXT, '总数', None)
+rsheet.put_cell(0, ncols, xlrd.XL_CELL_TEXT, '总数:', None)
 
 t = 0
 for row in range(1, rsheet.nrows):
     t += rsheet.cell(row, 0).value
     # 添加单元格
+
+print(t)
 rsheet.put_cell(1, ncols, xlrd.XL_CELL_NUMBER, t, None)
-wbook = xlwt.Workbook
+wbook = xlwt.Workbook()
+wbook.add_sheet(rsheet.name)
