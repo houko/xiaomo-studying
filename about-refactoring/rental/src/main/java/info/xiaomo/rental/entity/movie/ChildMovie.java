@@ -1,6 +1,7 @@
 package info.xiaomo.rental.entity.movie;
 
 import info.xiaomo.rental.constant.MovieEnum;
+import info.xiaomo.rental.entity.customer.Customer;
 
 /**
  * 把今天最好的表现当作明天最新的起点．．～
@@ -19,12 +20,12 @@ import info.xiaomo.rental.constant.MovieEnum;
 public class ChildMovie extends Movie {
 
 
-    public ChildMovie(long id, String name, int days) {
-        super(id, name, days);
+    public ChildMovie(Customer customer, long id, String name, int days) {
+        super(customer, id, name, days);
     }
 
     public double getPrice() {
-        return 6 * days;
+        return 6 * days * customer.getDiscount();
     }
 
     public MovieEnum getMovieType() {

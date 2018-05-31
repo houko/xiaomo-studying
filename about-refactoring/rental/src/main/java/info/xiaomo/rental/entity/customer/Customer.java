@@ -1,5 +1,6 @@
-package info.xiaomo.rental.entity;
+package info.xiaomo.rental.entity.customer;
 
+import info.xiaomo.rental.entity.Rental;
 import info.xiaomo.rental.entity.movie.Movie;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
@@ -23,18 +24,20 @@ import java.util.Vector;
  */
 @Data
 @Slf4j
-public class Customer {
+public abstract class Customer {
 
-    private long id;
+    protected long id;
 
-    private String name;
+    protected String name;
 
-    private Vector<Rental> rentals = new Vector<>();
+    protected Vector<Rental> rentals = new Vector<>();
 
     public Customer(long id, String name) {
         this.id = id;
         this.name = name;
     }
+
+    public abstract double getDiscount();
 
     /**
      * 租赁一部电影

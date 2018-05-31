@@ -1,6 +1,7 @@
 package info.xiaomo.rental.entity.movie;
 
 import info.xiaomo.rental.constant.MovieEnum;
+import info.xiaomo.rental.entity.customer.Customer;
 import lombok.Data;
 
 /**
@@ -20,6 +21,8 @@ import lombok.Data;
 @Data
 public abstract class Movie {
 
+    protected Customer customer;
+
     protected long id;
 
     protected String name;
@@ -35,10 +38,10 @@ public abstract class Movie {
 
     protected int days;
 
-    public Movie(long id, String name, int days) {
+    public Movie(Customer customer, long id, String name, int days) {
+        this.customer = customer;
         this.id = id;
         this.name = name;
         this.days = days;
     }
-
 }

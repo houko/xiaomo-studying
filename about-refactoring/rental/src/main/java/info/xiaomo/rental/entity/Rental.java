@@ -1,5 +1,6 @@
 package info.xiaomo.rental.entity;
 
+import info.xiaomo.rental.entity.customer.Customer;
 import info.xiaomo.rental.entity.movie.Movie;
 import lombok.Data;
 
