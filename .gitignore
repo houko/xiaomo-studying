@@ -10,3 +10,6 @@ __pycache__
 output
 .DS_Store
 venv
+.vs
+bin
+obj
