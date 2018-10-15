@@ -7,13 +7,13 @@ namespace about_csharp
     {
         public static void Call()
         {
-            float total = 0f;
+
             float paper = 0.0001f;
             for (int i = 0; i < 30; i++)
             {
-                total += paper * 2;
+                paper *= 2;
             }
-            Console.WriteLine("total is {0}", total);
+            Console.WriteLine("total is {0}", paper);
         }
     }
 }
