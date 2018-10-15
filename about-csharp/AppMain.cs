@@ -5,7 +5,7 @@ namespace about_csharp
     {
         public static void Main(String[] args)
         {
-            Q2.Call();
+            Q3.Call(2018);
         }
     }
 }
