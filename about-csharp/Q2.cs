@@ -7,9 +7,9 @@ namespace about_csharp
     // 在控制台中，让用户重复猜测，直到猜对未知。
     // 每次提示：大了、小了、终于猜对了，总共猜了?次。
     /// </summary>
-    public class Q2
+    public static class Q2
     {
-        private static void Main(String[] args)
+        public static void Call()
         {
 
         }

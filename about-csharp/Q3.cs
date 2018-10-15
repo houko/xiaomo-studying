@@ -12,8 +12,11 @@ namespace about_csharp
     * 4.根据年月计算天数
     *5.根据年份判断是否为闰年
     **/
-    public class Q3
+    public static class Q3
     {
+        public static void Call()
+        {
 
+        }
     }
 }
