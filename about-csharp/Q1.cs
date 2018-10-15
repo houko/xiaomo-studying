@@ -25,7 +25,7 @@ namespace about_csharp
                 Console.WriteLine("ball up {0} times, height is {1}", count, height);
 
             }
-            Console.WriteLine("total count is {0},totoal distance is {1}", count, distance);
+            Console.WriteLine("total count is {0},total distance is {1}", count, distance);
         }
 
 
