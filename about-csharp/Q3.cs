@@ -109,7 +109,7 @@ namespace about_csharp
         /// <param name="year">Year.</param>
         private static void PrintYearCalendar(int year)
         {
-            for (int i = 1; i <= 12; i++)
+            for (var i = 1; i <= 12; i++)
             {
                 PrintMonthCalendar(year, i);
                 Console.WriteLine();

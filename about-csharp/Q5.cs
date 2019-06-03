@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Linq;
+
 namespace about_csharp
 {
     /// <summary>
@@ -14,16 +16,9 @@ namespace about_csharp
         /// <param name="arr">Arr.</param>
         public static int GetMax(params int[] arr)
         {
-            int max = arr[0];
-            foreach (int i in arr)
-            {
-                if (i > max)
-                {
-                    max = i;
-                }
-            }
+            var max = arr[0];
 
-            return max;
+            return arr.Concat(new[] {max}).Max();
         }
 
         /// <summary>
@@ -33,16 +28,9 @@ namespace about_csharp
         /// <param name="arr">Arr.</param>
         public static int GetMin(params int[] arr)
         {
-            int min = arr[0];
-            foreach (int i in arr)
-            {
-                if (i < min)
-                {
-                    min = i;
-                }
-            }
+            var min = arr[0];
 
-            return min;
+            return arr.Concat(new[] {min}).Min();
         }
     }
 }

@@ -13,13 +13,13 @@ namespace about_csharp
         /// </summary>
         public static void Call()
         {
-            float height = 100f;
-            int count = 0;
-            float distance = height;
+            var height = 100f;
+            var count = 0;
+            var distance = height;
 
             while (height > 0.01f)
             {
-                height = height / 2;
+                height /= 2;
                 count++;
                 distance += height;
                 Console.WriteLine("ball up {0} times, height is {1}", count, height);

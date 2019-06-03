@@ -5,7 +5,7 @@ namespace about_csharp
     {
         public static void Main(String[] args)
         {
-            Q6 q6 = new Q6
+            var q6 = new Q6
             {
                 Age = 5,
                 Name = "xiaomo"

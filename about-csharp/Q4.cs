@@ -8,8 +8,8 @@ namespace about_csharp
         public static void Call()
         {
 
-            float paper = 0.0001f;
-            for (int i = 0; i < 30; i++)
+            var paper = 0.0001f;
+            for (var i = 0; i < 30; i++)
             {
                 paper *= 2;
             }

@@ -9,9 +9,9 @@ namespace about_csharp
     {
         public static void Call()
         {
-            Random random = new Random();
-            int ret = random.Next(0, 100);
-            int read = 0;
+            var random = new Random();
+            var ret = random.Next(0, 100);
+            var read = 0;
             do
             {
                 read = int.Parse(Console.ReadLine());
