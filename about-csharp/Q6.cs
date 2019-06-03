@@ -12,7 +12,7 @@ namespace about_csharp
 
         public override string ToString()
         {
-            return string.Format("[Q6: Name={0}]", Name);
+            return $"[Q6: Name={Name}]";
         }
 
     }
