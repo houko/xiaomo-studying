@@ -1,9 +1,10 @@
 ﻿using System;
+
 namespace about_csharp
 {
-    public class AppMain
+    public static class AppMain
     {
-        public static void Main(String[] args)
+        public static void Main(string[] args)
         {
             var q6 = new Q6
             {

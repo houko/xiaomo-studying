@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 
 namespace about_csharp
 {
@@ -8,7 +7,6 @@ namespace about_csharp
     /// </summary>
     public class Q5
     {
-
         /// <summary>
         /// Gets the max.
         /// </summary>

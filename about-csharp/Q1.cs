@@ -1,9 +1,7 @@
 ﻿using System;
 
-
 namespace about_csharp
 {
-
     public static class Q1
     {
         /// <summary>
@@ -23,11 +21,9 @@ namespace about_csharp
                 count++;
                 distance += height;
                 Console.WriteLine("ball up {0} times, height is {1}", count, height);
-
             }
+
             Console.WriteLine("total count is {0},total distance is {1}", count, distance);
         }
-
-
     }
 }

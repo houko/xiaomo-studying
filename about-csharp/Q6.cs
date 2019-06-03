@@ -1,5 +1,4 @@
-﻿using System;
-namespace about_csharp
+﻿namespace about_csharp
 {
     /// <summary>
     /// 排序
@@ -14,8 +13,5 @@ namespace about_csharp
         {
             return $"[Q6: Name={Name}]";
         }
-
     }
-
-
 }

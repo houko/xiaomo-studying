@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace about_csharp
 {
     /*1. 在控制台中显示年历的方法
@@ -14,7 +15,6 @@ namespace about_csharp
     **/
     public static class Q3
     {
-
         /// <summary>
         /// Call the specified year.
         /// </summary>
@@ -26,7 +26,6 @@ namespace about_csharp
                 PrintMonthCalendar(year, i);
                 Console.WriteLine();
             }
-
         }
 
 
@@ -79,19 +78,20 @@ namespace about_csharp
         private static int GetWeekByDay(int year, int month, int day)
         {
             DateTime dt = new DateTime(year, month, day);
-            return (int)dt.DayOfWeek;
+            return (int) dt.DayOfWeek;
         }
 
         private static void PrintMonthCalendar(int year, int month)
         {
             Console.WriteLine("{0}年{1}月", year, month);
             Console.WriteLine("日\t一\t二\t三\t四\t五\t六");
-            int week = GetWeekByDay(year, month, 1);//3
+            int week = GetWeekByDay(year, month, 1); //3
             for (int i = 0; i < week; i++)
             {
                 Console.Write("\t");
             }
-            int days = GetDaysByMonth(year, month);//30
+
+            int days = GetDaysByMonth(year, month); //30
             for (int i = 1; i <= days; i++)
             {
                 Console.Write(i + "\t");
@@ -122,7 +122,8 @@ namespace about_csharp
         /// <returns>The total second by minuite.</returns>
         /// <param name="minute">Minute.</param>
         private static int GetTotalSecondByMinuite(int minute)
-        {//分钟 --> 秒
+        {
+            //分钟 --> 秒
             return minute * 60;
         }
 
@@ -133,7 +134,8 @@ namespace about_csharp
         /// <param name="minute">Minute.</param>
         /// <param name="hour">Hour.</param>
         private static int GetTotalSecondByMinuiteHour(int minute, int hour)
-        { //小时 --> 分钟
+        {
+            //小时 --> 分钟
             return GetTotalSecondByMinuite(hour * 60 + minute);
         }
 
@@ -146,7 +148,8 @@ namespace about_csharp
         /// <param name="hour">Hour.</param>
         /// <param name="day">Day.</param>
         private static int GetTotalSecondByMinuiteHourDay(int minute, int hour, int day)
-        { //天 --> 小时
+        {
+            //天 --> 小时
             return GetTotalSecondByMinuiteHour(minute, hour + day * 24);
         }
 
@@ -156,7 +159,8 @@ namespace about_csharp
         /// <returns>The total second.</returns>
         /// <param name="minute">Minute.</param>
         private static int GetTotalSecond(int minute)
-        {//分钟 --> 秒
+        {
+            //分钟 --> 秒
             return minute * 60;
         }
 
@@ -167,7 +171,8 @@ namespace about_csharp
         /// <param name="minute">Minute.</param>
         /// <param name="hour">Hour.</param>
         private static int GetTotalSecond(int minute, int hour)
-        { //小时 --> 分钟
+        {
+            //小时 --> 分钟
             return GetTotalSecond(hour * 60 + minute);
         }
 
@@ -180,9 +185,9 @@ namespace about_csharp
         /// <param name="hour">Hour.</param>
         /// <param name="day">Day.</param>
         private static int GetTotalSecond(int minute, int hour, int day)
-        { //天 --> 小时
+        {
+            //天 --> 小时
             return GetTotalSecond(minute, hour + day * 24);
         }
     }
-
 }
