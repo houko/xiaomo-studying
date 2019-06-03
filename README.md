@@ -29,13 +29,21 @@
 - [《linux就该这么学》](https://book.douban.com/subject/27198046/)
 - [Docker中文指南](https://www.kancloud.cn/thinkphp/docker-guide)
 
-#### ◎ python相关:
+#### ◎ 人工智能相关:
 - [Python3基础教程从入门到精通](https://www.bilibili.com/video/av14886455/)
 - [用更优雅的python编程撩妹](https://www.bilibili.com/video/av17225258)
 - [Python tutorial](http://www.pythondoc.com/pythontutorial3/introduction.html)
+- [swift for tensorflow](https://github.com/tensorflow/swift)
 
 #### ◎ 网络编程 :
 - [《netty实战》](https://book.douban.com/subject/27038538/)      
+
+
+#### ◎ 游戏相关 :
+- [Unity User Manual](https://docs.unity3d.com)      
+- [Unity Scripting Reference](https://docs.unity3d.com/ScriptReference/index.html)      
+- [unity全集视频](https://www.bilibili.com/video/av33682065)      
+
 
 
 #### ◎ 前端相关 :
