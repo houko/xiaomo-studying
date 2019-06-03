@@ -6,6 +6,7 @@
 - .NETCore.App/2.1.0
 - nodejs 12.3.1
 - swift 5.0.1
+- unity2019
 
 ### 正在看或准备看的  
 
