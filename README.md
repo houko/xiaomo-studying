@@ -1,11 +1,15 @@
 ### 基础环境
 - jdk8:生产环境较为常用
 - centerOS7: 暂时没体验出太大的不同（除了防火墙）
-- netty4.x:5被作者废弃了23333333
+- netty4.x:5被作者废弃了23333
 - python3.6.4
+- .NETCore.App/2.1.0
+- nodejs 12.3.1
+- swift 5.0.1
 
 ### 正在看或准备看的  
-◎ 设计模式相关:    
+
+#### ◎ 设计模式相关:    
 - [《大话java设计模式》](https://book.douban.com/subject/2334288/)
 - [《设计模式之蝉》](https://book.douban.com/subject/4260618/)
 - [《Head First 设计模式（中文版）》](https://book.douban.com/subject/2243615/)
@@ -32,6 +36,10 @@
 #### ◎ 网络编程 :
 - [《netty实战》](https://book.douban.com/subject/27038538/)      
 
-### 值得参考的项目
+
+#### ◎ 前端相关 :
+- [《netty实战》](https://book.douban.com/subject/27038538/)   
+
+### ◎ 值得参考的项目
 - [java-design-patterns:目前github上星数最多的repo](https://github.com/iluwatar/java-design-patterns)
 - [java编程思想对应的一些例子](https://github.com/niushuai/thinking_in_java)

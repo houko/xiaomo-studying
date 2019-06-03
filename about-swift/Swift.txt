@@ -1,0 +1,12 @@
+当前swift版本号
+5.0.1
+
+xcode版本号 10.2.1
+xcodebuild -version
+
+查看Swift版本
+$ xcrun swift -version
+
+查看Xcode位置
+$ xcrun --find swift
+项目内也可以设置 使用swift的版本
