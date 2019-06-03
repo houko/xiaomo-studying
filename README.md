@@ -27,6 +27,7 @@
 - [《鸟哥的私房菜-基础》](https://book.douban.com/subject/4889838/)
 - [《鸟哥的私房菜-服务器》](https://book.douban.com/subject/2338464/)
 - [《linux就该这么学》](https://book.douban.com/subject/27198046/)
+- [Docker中文指南](https://www.kancloud.cn/thinkphp/docker-guide)
 
 #### ◎ python相关:
 - [Python3基础教程从入门到精通](https://www.bilibili.com/video/av14886455/)
@@ -38,7 +39,13 @@
 
 
 #### ◎ 前端相关 :
-- [《netty实战》](https://book.douban.com/subject/27038538/)   
+- [Heading First](https://book.douban.com/subject/3040870/)   
+- [精通 CSS（第3版）](https://book.douban.com/subject/30450258/)   
+- [图解CSS3](https://book.douban.com/subject/25920727/)   
+- [CSS权威指南（第三版）](https://book.douban.com/subject/2308234/)   
+- [CSS世界](https://book.douban.com/subject/27615777/)   
+- [CSS揭秘](https://book.douban.com/subject/26745943/)   
+- [redux教程-阮一峰](https://www.kancloud.cn/physihan/redux)   
 
 ### ◎ 值得参考的项目
 - [java-design-patterns:目前github上星数最多的repo](https://github.com/iluwatar/java-design-patterns)
