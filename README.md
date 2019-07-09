@@ -8,6 +8,24 @@
 - swift 5.0.1
 - unity2019
 
+
+### 目录说明
+- about-csharp c#语法学习测试代码
+- about-css css及css3语法特性相关
+- about-java-design-pattern java设计模式相关，head First读书笔记
+- about-linux-usage 工作中使用linux环境的一些记录
+- about-nihonngo 学日语的一些随记
+- about-python 用python3写的一些脚本
+- about-refactoring  重构-改善既有代码设计 读书笔记
+- about-regex 关于正则的一些记录，时间长了也就忘了规则
+- about-ruankao 软件设计师相关知识的记录
+- about-swift 学习swift的一些示例
+- java-se-programmer OCJP认证考试学习代码
+- netty-in-action netty in action读书笔记(netty4)
+- springcoud springcloud全家桶学习代码
+- think-in-java java编程思想读书笔记
+
+
 ### 正在看或准备看的  
 
 #### ◎ 设计模式相关:    
