@@ -1,7 +1,10 @@
 # Xcode
 .idea
 *.iml
+*.class
 target
+out 
+
 
 #python
 vendor
