@@ -16,6 +16,7 @@
 - `about-linux-usage` 工作中使用linux环境的一些记录
 - `about-nihonngo` 学日语的一些随记
 - `about-python` 用python3写的一些脚本
+- `about-react` react学习和应用
 - `about-refactoring`  重构-改善既有代码设计 读书笔记
 - `about-regex` 关于正则的一些记录，时间长了也就忘了规则
 - `about-ruankao` 软件设计师相关知识的记录
