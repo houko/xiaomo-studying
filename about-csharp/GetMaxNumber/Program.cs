@@ -1,12 +1,20 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
-namespace about_csharp
+namespace GetMaxNumber
 {
-    /// <summary>
-    /// 获取数组中最大/最小的数
-    /// </summary>
-    public class Q5
+    class Program
     {
+        static void Main(string[] args)
+        {
+            int[] arr = {1, 5, 6, 3, 9, 123};
+            int max = GetMax(arr);
+            Console.WriteLine(max);
+            int min = GetMin(arr);
+            Console.WriteLine(min);
+        }
+
+
         /// <summary>
         /// Gets the max.
         /// </summary>

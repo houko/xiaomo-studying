@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace about_csharp
+namespace ShowCalender
 {
     /*1. 在控制台中显示年历的方法
      -- 调用12次显示月历方法
@@ -13,14 +13,29 @@ namespace about_csharp
     * 4.根据年月计算天数
     *5.根据年份判断是否为闰年
     **/
-    public static class Q3
+    class Program
     {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("please input year");
+            var ret = Console.ReadLine();
+            var year = int.Parse(ret);
+            Call(year);
+        }
+
+
         /// <summary>
         /// Call the specified year.
         /// </summary>
         /// <param name="year">Year.</param>
         public static void Call(int year)
         {
+            if (year <= 0)
+            {
+                Console.WriteLine("please input year (0-9999)");
+                return;
+            }
+
             for (int i = 1; i <= 12; i++)
             {
                 PrintMonthCalendar(year, i);
