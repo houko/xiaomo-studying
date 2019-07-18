@@ -1,6 +1,6 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
+# rider 2019
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "about-csharp", "about-csharp.csproj", "{515C5D84-2B63-4DF3-B4AC-316610702C8D}"
 EndProject
 Global
