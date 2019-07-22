@@ -10,9 +10,21 @@ import java.util.Random;
  * 设计抢红包系统，100元分成10份，100个来抢，怎么设计
  */
 public class RobRedPackageMain {
-    //发红包算法，金额参数以分为单位
+    public static void main(String[] args) {
+        List<Integer> amountList = divideRedPackage(100, 10);
+        for (Integer amount : amountList) {
+            System.out.println("抢到金额：" + new BigDecimal(amount));
+        }
+    }
+
+    /***
+     * 发红包算法
+     * @param totalAmount 总金额
+     * @param totalPeopleNum 总人数
+     * @return 抢到的红包详情列表
+     */
     public static List<Integer> divideRedPackage(Integer totalAmount, Integer totalPeopleNum) {
-        List<Integer> amountList = new ArrayList<Integer>();
+        List<Integer> amountList = new ArrayList<>();
         Integer restAmount = totalAmount;
         Integer restPeopleNum = totalPeopleNum;
         Random random = new Random();
@@ -25,12 +37,5 @@ public class RobRedPackageMain {
         }
         amountList.add(restAmount);
         return amountList;
-    }
-    public static void main(String[] args) {
-        List<Integer> amountList = divideRedPackage(5000, 30);
-        for (Integer amount : amountList) {
-            System.out.println("抢到金额：" +
-                    new BigDecimal(amount).divide(new BigDecimal(100)));
-        }
     }
 }
