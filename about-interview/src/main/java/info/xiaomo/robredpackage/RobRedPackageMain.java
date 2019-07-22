@@ -29,8 +29,19 @@ public class RobRedPackageMain {
         Integer restPeopleNum = totalPeopleNum;
         Random random = new Random();
         for (int i = 0; i < (totalPeopleNum - 1); i++) {
-            //随机范围：[1，剩余人均金额的两倍)，左闭右开
+            //随机范围：[1，剩余人均金额的两倍)，左闭右开   -1再+1是为了保证至少抢到的红包数为1
             int amount = random.nextInt((restAmount / restPeopleNum * 2) - 1) + 1;
+            // 1  random.nextInt(100/10*2-1)+1
+            // 2  random.nextInt(90/9*2-1)+1
+            // 3  random.nextInt(80/8*2-1)+1
+            // 4  random.nextInt(70/7*2-1)+1
+            // 5  random.nextInt(60/6*2-1)+1
+            // 6  random.nextInt(50/5*2-1)+1
+            // 7  random.nextInt(40/4*2-1)+1
+            // 8  random.nextInt(30/3*2-1)+1
+            // 9  random.nextInt(20/2*2-1)+1
+            // 10  random.nextInt(10/1*2-1)+1
+
             restAmount -= amount;
             restPeopleNum--;
             amountList.add(amount);
