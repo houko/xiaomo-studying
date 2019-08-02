@@ -138,4 +138,3 @@ class Solution {
 ![](https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/20190509165331.gif)
 
 
-![](https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/fz0rq.png)

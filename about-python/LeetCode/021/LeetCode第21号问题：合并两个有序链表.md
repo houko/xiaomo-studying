@@ -104,4 +104,3 @@ ListNode* mergeTwoOrderedLists(ListNode* pHead1, ListNode* pHead2){
 
 
 
-![](https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/fz0rq.png)

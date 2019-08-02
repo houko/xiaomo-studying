@@ -67,4 +67,3 @@ public int getImportance(List<Employee> employees, int id) {
 
 
 
-![](https://bucket-1257126549.cos.ap-guangzhou.myqcloud.com/blog/fz0rq.png)
