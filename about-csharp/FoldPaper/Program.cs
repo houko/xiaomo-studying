@@ -1,11 +1,17 @@
 ﻿using System;
 
-namespace about_csharp
+namespace FoldPaper
 {
-    //练习：一张纸的厚度为0.0001米
-    //请计算对折30次之后的厚度为多少米。
-    public static class Q4
+    class Program
     {
+        //练习：一张纸的厚度为0.0001米
+        //请计算对折30次之后的厚度为多少米。
+        static void Main(string[] args)
+        {
+            Call();
+        }
+        
+        
         public static void Call()
         {
             var paper = 0.0001f;

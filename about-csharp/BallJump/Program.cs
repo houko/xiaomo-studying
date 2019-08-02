@@ -1,9 +1,13 @@
 ﻿using System;
 
-namespace about_csharp
+namespace ball_jump
 {
-    public static class Q1
+    class Program
     {
+        static void Main(string[] args)
+        {
+            Call();
+        }
         /// <summary>
         /// Q1.
         /// 一个球从100米高度落下，每次弹回原高度一半,计算：经过？次最终落地(最小弹起高度为0.01米)

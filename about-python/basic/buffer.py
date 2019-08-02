@@ -2,5 +2,5 @@
 # 行缓冲 buffering设置为1
 # 无缓冲 buffering设置为0
 
-f = open('history', 'w', buffering=1)
+f = open('history', 'w', 1)
 f.write('a\n')

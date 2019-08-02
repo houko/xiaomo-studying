@@ -8,5 +8,5 @@ t = sorted(zip(score.values(), score.keys()))
 print(t)
 
 # 或者
-p = sorted(score.items(), key=lambda x: x[1])
+p = sorted(score.items())
 print(p)
