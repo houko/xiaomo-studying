@@ -6,8 +6,9 @@ package info.xiaomo.threadprint;
 public class PrintNumMain {
     public static void main(String[] args) {
         Num num = new Num();
-        PrintJi ji = new PrintJi(num);
-        PrintOu ou = new PrintOu(num);
+        int loopCount = 5;
+        PrintJi ji = new PrintJi(num, loopCount);
+        PrintOu ou = new PrintOu(num, loopCount);
 
         Thread jiThread = new Thread(ji);
         Thread ouThread = new Thread(ou);

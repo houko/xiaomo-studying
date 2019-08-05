@@ -7,12 +7,19 @@ public class PrintOu implements Runnable {
 
     final Num num;
 
+    int loopCount = 100;
+
+    public PrintOu(Num num, int loopCount) {
+        this.num = num;
+        this.loopCount = loopCount;
+    }
+
     public PrintOu(Num num) {
         this.num = num;
     }
 
     public void run() {
-        while (num.i < 100) {
+        while (num.i < loopCount) {
             synchronized (num) {
                 if (!num.flag) {
                     try {
