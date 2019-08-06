@@ -1,24 +1,16 @@
-public class KMP {
+package info.xiaomo.kmp;
 
-    public static void main(String[] args) {
-        String str = "BBC ABCDAB ABCDABCDABDE";
-        String pattern = "ABCDABD";
-        KMP kmp = new KMP();
-        int position = kmp.kmp(str, pattern);
-        System.out.println("匹配位置:" + position);
-        String find = str.substring(position, position + pattern.length());
-        System.out.println("结果验证: " + find + ":" + pattern + " => " + find.equals(pattern));
-    }
+public class KMP {
 
 
     /**
-     * kmp 算法
+     * info.xiaomo.kmp 算法
      *
      * @param s s
      * @param pattern pattern
      * @return position
      */
-    int kmp(String s, String pattern) {
+    public int kmp(String s, String pattern) {
         int i = 0;
         int j = 0;
         int sLen = s.length();
