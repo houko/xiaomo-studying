@@ -28,4 +28,9 @@ public class Stack implements LinerList {
     public Object get(int index) throws Exception {
         return null;
     }
+
+    @Override
+    public void show() {
+
+    }
 }

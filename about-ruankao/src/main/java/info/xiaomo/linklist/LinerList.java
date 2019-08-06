@@ -11,5 +11,7 @@ public interface LinerList {
 
     Object get(int index) throws Exception;
 
+    void show();
+
 
 }

@@ -28,4 +28,9 @@ public class Queue implements LinerList {
     public Object get(int index) throws Exception {
         return null;
     }
+
+    @Override
+    public void show() {
+
+    }
 }
