@@ -1,4 +1,6 @@
-package info.xiaomo.linklist;
+package info.xiaomo.linklist.chain;
+
+import info.xiaomo.linklist.LinerList;
 
 /**
  * 单链表
