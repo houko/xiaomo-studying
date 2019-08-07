@@ -1,9 +1,9 @@
 package info.xiaomo.linklist;
 
 /**
- * 双向链表
+ * 单链表
  */
-public class DoubleLinkList implements LinerList {
+public class SingleChain implements LinerList {
     @Override
     public int size() {
         return 0;
