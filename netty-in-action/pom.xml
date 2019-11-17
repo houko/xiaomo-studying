@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>info.xiaomo</groupId>
     <artifactId>netty-in-action</artifactId>
-    <version>2017.1</version>
+    <version>2019.1</version>
 
     <dependencies>
         <dependency>
             <groupId>io.netty</groupId>
             <artifactId>netty-all</artifactId>
-            <version>4.1.16.Final</version>
+            <version>[4.1.42,)</version>
         </dependency>
     </dependencies>
 
