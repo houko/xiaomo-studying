@@ -1,13 +1,13 @@
 ### 基础环境
 - jdk8:生产环境较为常用
 - centerOS7: 暂时没体验出太大的不同（除了防火墙）
-- netty4.x:5被作者废弃了23333
-- python3.6.4
+- netty4.x: 5被作者废弃了23333
+- python3(flask,django,tornado)
 - .NETCore.App/2.1.0
-- nodejs 12.3.1
-- swift 5.0.1
+- nodejs 12(express,koa)
+- swift 5
 - unity2019
-
+- vue2
 
 ### 目录说明
 - `about-csharp` c#语法学习测试代码
@@ -21,9 +21,10 @@
 - `about-regex` 关于正则的一些记录，时间长了也就忘了规则
 - `about-ruankao` 软件设计师相关知识的记录
 - `about-swift` 学习swift的一些示例
+- `about-vuejs` 学习vuejs的一些示例（包含js和ts2个版本）
 - `java-se-programmer` OCJP认证考试学习代码
 - `netty-in-action` netty in action读书笔记(netty4)
-- `springcoud` springcloud全家桶学习代码
+- `springcoud` spring cloud全家桶学习代码
 - `think-in-java` java编程思想读书笔记
 
 
@@ -72,8 +73,7 @@
 - [图解CSS3](https://book.douban.com/subject/25920727/)   
 - [CSS权威指南（第三版）](https://book.douban.com/subject/2308234/)   
 - [CSS世界](https://book.douban.com/subject/27615777/)   
-- [CSS揭秘](https://book.douban.com/subject/26745943/)   
-- [redux教程-阮一峰](https://www.kancloud.cn/physihan/redux)   
+- [CSS揭秘](https://book.douban.com/subject/26745943/)    
 
 ### ◎ 值得参考的项目
 - [java-design-patterns:目前github上星数最多的repo](https://github.com/iluwatar/java-design-patterns)
