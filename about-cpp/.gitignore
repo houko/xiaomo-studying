@@ -33,3 +33,5 @@
 
 # clion
 cmake-build-debug
+build
+.vscode
