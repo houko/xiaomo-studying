@@ -26,6 +26,7 @@
         <module>template</module>
         <module>state</module>
         <module>base</module>
+        <module>abstractFactory</module>
     </modules>
 
     <properties>
