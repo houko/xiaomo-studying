@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: task-pv-nfs-pod
+spec:
+  volumes:
+    - name: task-pv-nfs-storage
+      persistentVolumeClaim:
+        claimName: task-pv-claim-nfs
+  containers:
+    - name: task-pv-nfs-container
+      image: nginx
+      ports:
+        - containerPort: 80
+          name: "http-server-nfs"
+      volumeMounts:
+        - mountPath: "/usr/share/nginx/html"
+          name: task-pv-nfs-storage

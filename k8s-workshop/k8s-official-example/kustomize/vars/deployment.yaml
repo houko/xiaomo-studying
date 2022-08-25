@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx-vars
+spec:
+  selector:
+    matchLabels:
+      run: my-nginx-vars
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: my-nginx-vars
+    spec:
+      containers:
+      - name: my-nginx-vars
+        image: nginx
+        command: ["start", "--host", "$(MY_SERVICE_NAME)"]

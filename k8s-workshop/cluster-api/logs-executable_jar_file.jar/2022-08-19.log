@@ -1,0 +1,14 @@
+2022-08-19 09:34:51.468 INFO  [Attach Listener@19459] com.janetfilter.core.commons.DebugInfo$FileWriteTask-239 : Environment: {
+	pid = 19459, 
+	version = 2022.2.0, 
+	versionNumber = 202201000, 
+	appName = executable_jar_file.jar, 
+	baseDir = /Users/xiaomo/Workspace/cloud/xiaomo-k8s-workshop/cluster-api, 
+	agentFile = /Users/xiaomo/Workspace/cloud/xiaomo-k8s-workshop/cluster-api/ja-netfilter.jar, 
+	configDir = /Users/xiaomo/Workspace/cloud/xiaomo-k8s-workshop/cluster-api/config-executable_jar_file.jar, 
+	pluginsDir = /Users/xiaomo/Workspace/cloud/xiaomo-k8s-workshop/cluster-api/plugins-executable_jar_file.jar, 
+	logsDir = /Users/xiaomo/Workspace/cloud/xiaomo-k8s-workshop/cluster-api/logs-executable_jar_file.jar, 
+	nativePrefix = HBJyK$QIgoYfKNW_, 
+	disabledPluginSuffix = .disabled.jar, 
+	attachMode = true
+}

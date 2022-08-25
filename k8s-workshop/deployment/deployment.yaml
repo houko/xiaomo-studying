@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-deployment
+  namespace: xiaomo
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: my-app
+      release: stable
+  template:
+    metadata:
+      labels:
+        app: my-app
+        release: stable
+        env: test
+    spec:
+      containers:
+        - name: my-app
+          image: nginx
+          imagePullPolicy: IfNotPresent
+          ports:
+            - name: http
+              containerPort: 8888
+

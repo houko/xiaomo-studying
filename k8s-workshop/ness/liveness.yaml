@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: liveness-exec
+  namespace: test
+spec:
+  containers:
+    - name: liveness-exec-container
+      image: busybox
+      command: [ "bin/bash","-c","touch /temp/live ; sleep 60 ; rm -rf/temp/live ; sleep 3600", ]
+      livenessProbe:
+        exec:
+          command: [ "test","-e","/temp/live" ]
+        initialDelaySeconds: 1
+        periodSeconds: 3

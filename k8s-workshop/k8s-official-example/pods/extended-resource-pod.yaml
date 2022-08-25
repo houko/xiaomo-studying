@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: extended-resource-demo
+  namespace: xiaomo
+spec:
+  containers:
+  - name: extended-resource-demo-ctr
+    image: nginx
+    resources:
+      requests:
+        example.com/dongle: 3
+      limits:
+        example.com/dongle: 3

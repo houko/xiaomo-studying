@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-app-service
+  namespace: xiaomo
+spec:
+  selector:
+    app: my-app
+    release: stable
+  ports:
+    - name: http
+      port: 8888
+      targetPort: 8888

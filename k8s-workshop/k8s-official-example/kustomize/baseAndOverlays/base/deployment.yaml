@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx-base
+spec:
+  selector:
+    matchLabels:
+      run: my-nginx-base
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: my-nginx-base
+    spec:
+      containers:
+      - name: my-nginx-base
+        image: nginx

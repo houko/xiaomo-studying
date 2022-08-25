@@ -1,0 +1,4 @@
+configMapGenerator:
+- name: example-configmap-1
+  files:
+  - application.properties

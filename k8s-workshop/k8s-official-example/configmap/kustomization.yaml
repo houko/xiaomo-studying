@@ -1,0 +1,6 @@
+configMapGenerator:
+- name: special-config-2
+  namespace: xiaomo
+  literals:
+  - special.how=very
+  - special.type=charm

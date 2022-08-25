@@ -1,0 +1,6 @@
+resources:
+- deployment.yaml
+images:
+- name: nginx
+  newName: nginx
+  newTag: 1.16.1

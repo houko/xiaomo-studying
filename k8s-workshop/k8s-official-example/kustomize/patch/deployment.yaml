@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx-patch
+spec:
+  selector:
+    matchLabels:
+      run: my-nginx-patch
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: my-nginx-patch
+    spec:
+      containers:
+      - name: my-nginx-patch
+        image: nginx
+        ports:
+        - containerPort: 80

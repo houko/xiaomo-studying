@@ -1,0 +1,5 @@
+spec:
+  strategy:
+    $retainKeys:
+    - type
+    type: Recreate

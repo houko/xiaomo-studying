@@ -1,0 +1,23 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: cronjob
+  labels:
+    name: cronjob
+    tier: cronjob
+spec:
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+            - name: hello
+              image: busybox
+              args:
+                - /bin/sh
+                - -c
+                - date; echo Hello from the k8s cluster
+          restartPolicy: OnFailure
+
+
+  schedule: "*/1 * * * *"

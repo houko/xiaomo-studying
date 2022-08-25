@@ -1,0 +1,23 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: nginx-test
+  namespace: xiaomo
+spec:
+  tls:
+    - hosts:
+        - k8s.xiaomo.info
+    - secretName: tls-secret
+  rules:
+    - host: k8s.xiaomo.info
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: test
+                port:
+                  number: 80
+
+

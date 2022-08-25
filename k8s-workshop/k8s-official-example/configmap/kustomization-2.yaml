@@ -1,0 +1,5 @@
+configMapGenerator:
+- name: game-config-5
+  namespace: xiaomo
+  files:
+  - game-special-key=./config/game.properties

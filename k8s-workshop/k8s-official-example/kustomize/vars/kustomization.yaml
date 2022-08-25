@@ -1,0 +1,13 @@
+namePrefix: dev-
+nameSuffix: "-001"
+
+resources:
+- deployment.yaml
+- service.yaml
+
+vars:
+- name: MY_SERVICE_NAME
+  objref:
+    kind: Service
+    name: my-nginx-vars
+    apiVersion: v1

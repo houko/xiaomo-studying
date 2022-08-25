@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: readness-httpget-pod
+  namespace: default
+spec:
+  containers:
+    - name: readness-httpget-pod
+      image: nginx
+      imagePullPolicy: IfNotPresent
+      readinessProbe:
+        httpGet:
+          port: 80
+          path: /index.html
+        initialDelaySeconds: 1
+        periodSeconds: 3

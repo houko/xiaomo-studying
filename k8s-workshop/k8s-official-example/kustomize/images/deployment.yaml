@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-nginx-images
+spec:
+  selector:
+    matchLabels:
+      run: my-nginx-images
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        run: my-nginx-images
+    spec:
+      containers:
+      - name: my-nginx-images
+        image: nginx:1.14.2
+        ports:
+        - containerPort: 80
