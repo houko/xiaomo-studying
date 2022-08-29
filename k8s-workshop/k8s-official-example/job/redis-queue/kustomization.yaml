@@ -1,0 +1,3 @@
+resources:
+- redis-pod.yaml
+- redis-service.yaml

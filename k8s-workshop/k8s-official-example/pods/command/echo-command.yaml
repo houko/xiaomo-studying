@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: echo-command-demo
+  labels:
+    purpose: demonstrate-command
+spec:
+  containers:
+  - name: echo-command-demo-container
+    image: debian
+    command: ["/bin/sh"]
+    args: ["-c", "while true; do echo hello; sleep 10;done"]
+  restartPolicy: OnFailure
