@@ -1,0 +1,108 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"v1","kind":"Pod","metadata":{"annotations":{},"name":"11-factor-app","namespace":"default"},"spec":{"containers":[{"args":["/bin/sh","-c","i=0; while true; do\n  echo \"$i: $(date)\" \u003e\u003e /var/log/1.log;\n  echo \"$(date) INFO $i\" \u003e\u003e /var/log/2.log;\n  i=$((i+1));\n  sleep 1;\ndone      \n"],"image":"busybox:1.28","name":"count","volumeMounts":[{"mountPath":"/var/log","name":"varlog"}]}],"volumes":[{"emptyDir":{},"name":"varlog"}]}}
+  creationTimestamp: "2022-10-16T23:34:01Z"
+  name: 11-factor-app
+  namespace: default
+  resourceVersion: "10955804"
+  uid: 712989e7-6f80-4641-8da1-c4bd05d9a13d
+spec:
+  containers:
+  - args:
+    - /bin/sh
+    - -c
+    - "i=0; while true; do\n  echo \"$i: $(date)\" >> /var/log/1.log;\n  echo \"$(date)
+      INFO $i\" >> /var/log/2.log;\n  i=$((i+1));\n  sleep 1;\ndone      \n"
+    image: busybox:1.28
+    imagePullPolicy: IfNotPresent
+    name: count
+    resources: {}
+    terminationMessagePath: /dev/termination-log
+    terminationMessagePolicy: File
+    volumeMounts:
+    - mountPath: /var/log
+      name: varlog
+    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+      name: kube-api-access-qfb9s
+      readOnly: true
+  dnsPolicy: ClusterFirst
+  enableServiceLinks: true
+  nodeName: gke-xiaomo-cluster-default-pool-682ac114-2rfp
+  preemptionPolicy: PreemptLowerPriority
+  priority: 0
+  restartPolicy: Always
+  schedulerName: default-scheduler
+  securityContext: {}
+  serviceAccount: default
+  serviceAccountName: default
+  terminationGracePeriodSeconds: 30
+  tolerations:
+  - effect: NoExecute
+    key: node.kubernetes.io/not-ready
+    operator: Exists
+    tolerationSeconds: 300
+  - effect: NoExecute
+    key: node.kubernetes.io/unreachable
+    operator: Exists
+    tolerationSeconds: 300
+  volumes:
+  - emptyDir: {}
+    name: varlog
+  - name: kube-api-access-qfb9s
+    projected:
+      defaultMode: 420
+      sources:
+      - serviceAccountToken:
+          expirationSeconds: 3607
+          path: token
+      - configMap:
+          items:
+          - key: ca.crt
+            path: ca.crt
+          name: kube-root-ca.crt
+      - downwardAPI:
+          items:
+          - fieldRef:
+              apiVersion: v1
+              fieldPath: metadata.namespace
+            path: namespace
+status:
+  conditions:
+  - lastProbeTime: null
+    lastTransitionTime: "2022-10-16T23:34:01Z"
+    status: "True"
+    type: Initialized
+  - lastProbeTime: null
+    lastTransitionTime: "2022-10-16T23:34:04Z"
+    status: "True"
+    type: Ready
+  - lastProbeTime: null
+    lastTransitionTime: "2022-10-16T23:34:04Z"
+    status: "True"
+    type: ContainersReady
+  - lastProbeTime: null
+    lastTransitionTime: "2022-10-16T23:34:01Z"
+    status: "True"
+    type: PodScheduled
+  containerStatuses:
+  - containerID: containerd://b5f21cd4448c2de5cbf610a1cf56cc8e0f072815f671c48c8181b6b3d489a177
+    image: docker.io/library/busybox:1.28
+    imageID: docker.io/library/busybox@sha256:141c253bc4c3fd0a201d32dc1f493bcf3fff003b6df416dea4f41046e0f37d47
+    lastState: {}
+    name: count
+    ready: true
+    restartCount: 0
+    started: true
+    state:
+      running:
+        startedAt: "2022-10-16T23:34:03Z"
+  hostIP: 10.146.0.25
+  phase: Running
+  podIP: 10.84.1.9
+  podIPs:
+  - ip: 10.84.1.9
+  qosClass: BestEffort
+  startTime: "2022-10-16T23:34:01Z"
